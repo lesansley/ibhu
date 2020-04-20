@@ -5,7 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
-import { FaCircle } from 'react-icons/fa';
 import carouselStyles from './carousel.module.scss';
 
 const Carousel = () => {
@@ -33,36 +32,36 @@ const Carousel = () => {
 	
 	return (
 		<>
-			<CarouselProvider
-				naturalSlideWidth={400}
-				naturalSlideHeight={250}
-				totalSlides={data.allFile.totalCount}
-				interval={3000}
-				isPlaying
-				infinite
-				hasMasterSpinner
-				lockOnWindowScroll
-			>
-				<div className={carouselStyles.container}>
-					<Slider>
-					{data.allFile.edges.map(edge => {
-						return (
-							<Slide key={uuidv4()} className={carouselStyles.listItem}>
-								<Image
-									tag={`img`}
-									src={edge.node.publicURL}
-									className={carouselStyles.image}
-									/>
-							</Slide>
-						)
-					})}
-					</Slider>
-					<ButtonBack className={carouselStyles.buttonBack}><MdKeyboardArrowLeft className={carouselStyles.arrow} /></ButtonBack>
-					<ButtonNext className={carouselStyles.buttonNext}><MdKeyboardArrowRight className={carouselStyles.arrow} /></ButtonNext>
-				</div>
-				<DotGroup className={carouselStyles.dotGroup} />
+		<CarouselProvider
+			naturalSlideWidth={400}
+			naturalSlideHeight={250}
+			totalSlides={data.allFile.totalCount}
+			interval={3000}
+			isPlaying
+			infinite
+			hasMasterSpinner
+			lockOnWindowScroll
+		>
+			<div className={carouselStyles.container}>
+				<Slider>
+				{data.allFile.edges.map(edge => {
+					return (
+						<Slide key={uuidv4()} className={carouselStyles.listItem}>
+							<Image
+								tag={`img`}
+								src={edge.node.publicURL}
+								className={carouselStyles.image}
+								/>
+						</Slide>
+					)
+				})}
+				</Slider>
+				<ButtonBack className={carouselStyles.buttonBack}><MdKeyboardArrowLeft className={carouselStyles.arrow} /></ButtonBack>
+				<ButtonNext className={carouselStyles.buttonNext}><MdKeyboardArrowRight className={carouselStyles.arrow} /></ButtonNext>
+			</div>
+			<DotGroup className={carouselStyles.dotGroup} />
 			</CarouselProvider>
-			</>
+		</>
 	)
 }
 

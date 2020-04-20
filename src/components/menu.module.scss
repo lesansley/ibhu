@@ -1,13 +1,34 @@
 @import '../styles/base/variables';
 
+.container {
+	float: right;
+	height: 2rem;
+}
+
 .nav-list {
 	display: block;
 	list-style-type: none;
 }
 
 .list-item {
-	display: inline;
 	list-style-type: none;
+}
+
+.large-menu .nav-list {
+	margin-top: 1.45rem;
+}
+
+.large-menu .list-item {
+	display: inline;
+}
+
+.small-menu {
+	background-color: $IBHU_BLACK;
+	margin-top: 1.2rem;
+}
+
+.small-menu .list-item {
+	display: block;
 }
 
 .link-item {

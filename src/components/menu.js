@@ -20,13 +20,13 @@ const Menu = () => {
   `)
 	
 	return (
-		<>
+		<div className={menuStyles.container}>
 			<ResponsiveMenu
 				menuOpenButton={<MdMenu size={30} className={menuStyles.menuButton} />}
 				menuCloseButton={<MdClose size={30} className={menuStyles.menuButton} />}
         changeMenuOn="500px"
-        largeMenuClassName="large-menu-classname"
-        smallMenuClassName="small-menu-classname"
+				largeMenuClassName={menuStyles.largeMenu}
+        smallMenuClassName={menuStyles.smallMenu}
         menu={
 					<ul className={menuStyles.navList}>
             {data.site.siteMetadata.menuLinks.map(link => (
@@ -43,7 +43,7 @@ const Menu = () => {
           </ul>
         }
       />
-		</>
+		</div>
 	)
 }
 

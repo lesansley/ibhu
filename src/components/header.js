@@ -11,7 +11,7 @@ const Header = () => {
 	return (
 		<header className={headerStyles.container}>
 			<div className={headerStyles.content}>
-				<div className={headerStyles.h1}>
+				<div className={headerStyles.logoContainer}>
 					<Link
 						to='/'
 						className={headerStyles.link}

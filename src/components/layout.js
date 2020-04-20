@@ -28,7 +28,7 @@ const Layout = ({ children, banner }) => {
 		<>
 			<div className={layoutStyles.container}>
 				<Header siteTitle={data.site.siteMetadata.title} />
-				<div>{banner}</div>
+				<div className={layoutStyles.banner}>{banner}</div>
 				<div className={layoutStyles.content}>
 					<main>{children}</main>
 				</div>
