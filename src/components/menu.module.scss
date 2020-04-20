@@ -1,0 +1,30 @@
+@import '../styles/base/variables';
+
+.nav-list {
+	display: block;
+	list-style-type: none;
+}
+
+.list-item {
+	display: inline;
+	list-style-type: none;
+}
+
+.link-item {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+.link-item:hover {
+	color: $INDLOVU_ORANGE;
+}
+
+.active-link-item {
+	color: grey;
+}
+
+.menuButton {
+	size: 60px;
+	color: $INDLOVU_ORANGE;
+}

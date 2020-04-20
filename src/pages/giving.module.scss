@@ -1,0 +1,43 @@
+.container {
+	display: grid;
+	column-gap: 100px;
+	row-gap: 15px;
+	align-items: center;
+	justify-content: center;
+	grid-template-areas: 
+		'af-pic bathos-pic'
+		'af-info bathos-info';
+}
+.giving-af-pic {
+	grid-area: af-pic;
+}
+.giving-af-info {
+	grid-area: af-info;
+}
+.giving-bathos-pic {
+	grid-area: bathos-pic;
+}
+.giving-bathos-info {
+	grid-area: bathos-info;
+}
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      'af-pic'
+      'af-info'
+			'bathos-pic'
+			'bathos-info';
+  }
+}
+.image {
+	max-width: 400px;
+	margin-bottom: 1.45rem;
+}
+.right {
+	float: right;
+}
+
+.image {
+	max-width: 400px;
+	margin-bottom: 1.45rem;
+}

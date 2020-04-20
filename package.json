@@ -1,24 +1,38 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ibhu",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Dare to be different",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Les Ansley <les@ibhu.co.za>",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.13.38",
+    "@contentful/rich-text-react-renderer": "^13.4.0",
+    "@contentful/rich-text-types": "^14.1.0",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-source-contentful": "^2.2.7",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.4.4",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
+    "pure-react-carousel": "^1.27.0",
     "react": "^16.12.0",
+    "react-awesome-slider": "^4.1.0",
+    "react-collapsible": "^2.7.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
+    "react-key-index": "^0.1.1",
+    "react-responsive-navbar": "^1.0.11",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -27,7 +41,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

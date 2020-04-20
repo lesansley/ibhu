@@ -1,0 +1,44 @@
+@import '../styles/base/variables';
+
+.inner {
+  padding: 10px;
+  border-top: 0;
+
+  p {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.trigger {
+	display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+	color: white;
+	background-color: $IBHU_BLUE;
+  transition: background-color 200ms ease;
+
+  &:after {
+    font-family: 'fontawesomeregular';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  &.open {
+		&:after {
+      transform: rotateZ(180deg);
+		}
+	}
+}
+

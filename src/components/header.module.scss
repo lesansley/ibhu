@@ -1,0 +1,22 @@
+@import '../styles/base/variables';
+
+.container {
+	background: $IBHU_BLACK;
+	margin-bottom: 1.45rem;
+}
+
+.logo {
+	max-width: 80px;
+	margin-bottom: 1.45rem
+}
+
+.content {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 1.45rem 1.0875rem;
+}
+
+.link {
+	color: $IBHU_WHITE;
+	text-decoration: none;
+}

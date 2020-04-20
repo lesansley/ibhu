@@ -1,0 +1,66 @@
+@import '../styles//base/variables';
+
+.container {
+	background-color: $IBHU_BLACK;
+	position: relative;
+	margin: auto;
+	margin-top: -40px;
+}
+
+.list-item {
+	padding-bottom: 0px;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.buttonBack {
+  left: 0;
+}
+
+.buttonNext {
+  right: 0;
+}
+
+.buttonNext, .buttonBack {
+	position: absolute;
+  top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+}
+
+.buttonNext:focus, .buttonBack:focus {
+	outline: none;
+}
+
+.arrow {
+	font-size: 40px;
+	color: $IBHU_WHITE;
+}
+
+.dot-group {
+	text-align: center;
+	
+}
+
+.dot-group button {
+	background-color: $IBHU_BLACK;
+	border: none;
+	height: 15px;
+	margin-right: 15px;
+	border-radius: 15%;
+}
+
+.dot-group button:disabled {
+		background-color: $INDLOVU_ORANGE;
+}
+
+.dot-group button:focus {
+	outline-color: $INDLOVU_ORANGE;
+}
