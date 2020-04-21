@@ -20,6 +20,9 @@
 .giving-bathos-info {
 	grid-area: bathos-info;
 }
+.donate-button {
+	margin-top: 10px;
+}
 @media (max-width: 700px) {
   .container {
     grid-template-areas:
