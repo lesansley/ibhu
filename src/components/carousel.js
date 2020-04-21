@@ -43,7 +43,7 @@ const Carousel = () => {
 			lockOnWindowScroll
 		>
 			<div className={carouselStyles.container}>
-				<Slider>
+					<Slider classNameAnimation={carouselStyles.sliderAnimation}>
 				{data.allFile.edges.map(edge => {
 					return (
 						<Slide key={uuidv4()} className={carouselStyles.listItem}>

@@ -10,14 +10,6 @@
 	padding-bottom: 0px;
 }
 
-.image {
-	width: 100%;
-	height: auto;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-}
-
 .buttonBack {
   left: 0;
 }
@@ -64,3 +56,98 @@
 .dot-group button:focus {
 	outline-color: $INDLOVU_ORANGE;
 }
+
+.slider-animation {
+	transition: transform 0ms;
+	//transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000); /* easeInOutCubic */
+	will-change: transform;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	// opacity: 0;
+	animation: slideShow 15s linear infinite 0s;
+  // -o-animation: slideShow 12s linear infinite 0s;
+  // -moz-animation: slideShow 12s linear infinite 0s;
+  // -webkit-animation: slideShow 12s linear infinite 0s;
+}
+
+@keyframes 
+slideShow {  
+	0% {
+		opacity: 1;
+		transform:scale(1.0);
+		-ms-transform:scale(1);
+	}
+	100% {
+		opacity: 1;
+		transform:scale(1.2);
+		-ms-transformm:scale(1.2);
+	}
+}
+// @-o-keyframes 
+// slideShow {  
+// 	0% {
+// 		opacity: 0;
+// 		-o-transform:scale(1);
+// 	}
+// 	5% {
+// 		opacity: 1
+// 	}
+// 	25% {
+// 		opacity: 1;
+// 	}
+// 	30% {
+// 		opacity: 0;
+// 		-o-transform:scale(1.1);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		-o-transformm:scale(1);
+// 	}
+// }
+// @-moz-keyframes 
+// slideShow { 
+// 	0% {
+// 		opacity: 0;
+// 		-moz-transform:scale(1);
+// 	}
+// 	5% {
+// 		opacity: 1
+// 	}
+// 	25% {
+// 		opacity: 1;
+// 	}
+// 	30% {
+// 		opacity: 0;
+// 		-moz-transform:scale(1.1);
+// 	}
+// 	100% {
+// 		opacity: 0;
+// 		-moz-transformm:scale(1);
+// 	}
+// }
+// @-webkit-keyframes 
+// slideShow {
+// 	0% {
+// 		opacity: 0;
+// 		-webkit-transform:scale(1);
+// 	}
+// 	5% {
+// 		opacity: 1
+// 	}
+// 	25% {
+// 		opacity: 1;
+// 	}
+// 	30% {
+// 		opacity: 0;
+// 		-webkit-transform:scale(1.1);
+// 	}
+// 	100% {
+// 	ßbkit-transformm:scale(1);
+// 	}
+// }
