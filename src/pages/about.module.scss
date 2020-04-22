@@ -1,0 +1,15 @@
+@import '../styles/base/variables';
+
+.quote-container {
+	background-color: $IBHU_BLUE;
+	min-height: 200px;
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;
+	height: 100px;
+	margin-top: 100px;
+	left: 50%;
+}
+.image-centre {
+	text-align: center;
+}

@@ -45,6 +45,10 @@ module.exports = {
 			{
 				name:'FAQ',
 				link:'/faq/'
+			},
+			{
+				name:'About',
+				link:'/about/'
 			}
 		]
 	},
