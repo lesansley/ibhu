@@ -6,8 +6,6 @@ import SEO from '../components/seo'
 import givingStyles from './giving.module.scss'
 
 const Giving = () => {
-	const widget = `<a href="//widgets.justgiving.com/Button/Redirect?p=eyJJZCI6ImE3MDg4N2JlLTk2YTctNDExMi1hYmMwLWNkMTI1ZTJlNzMzMyIsIkNoYXJpdHlJZCI6MTQzMTAzLCJTaXplIjoibCIsIlJlZmVyZW5jZSI6ImliaHUiLCJUeXBlIjoiRG9uYXRlIn0="><img src="//widgets.justgiving.com/Button?p=eyJJZCI6ImE3MDg4N2JlLTk2YTctNDExMi1hYmMwLWNkMTI1ZTJlNzMzMyIsIkNoYXJpdHlJZCI6MTQzMTAzLCJTaXplIjoibCIsIlJlZmVyZW5jZSI6ImliaHUiLCJUeXBlIjoiRG9uYXRlIn0=" /></a>`
-
 	return (
 		<Layout>
 			<SEO title='Giving Back page' />
@@ -25,7 +23,7 @@ const Giving = () => {
 					support their work in wildlife conservation at Phinda Game Reserve.
 					<div className={givingStyles.donateButton}>
 						<a href="//widgets.justgiving.com/Button/Redirect?p=eyJJZCI6ImE3MDg4N2JlLTk2YTctNDExMi1hYmMwLWNkMTI1ZTJlNzMzMyIsIkNoYXJpdHlJZCI6MTQzMTAzLCJTaXplIjoibCIsIlJlZmVyZW5jZSI6ImliaHUiLCJUeXBlIjoiRG9uYXRlIn0=">
-							<img src="//widgets.justgiving.com/Button?p=eyJJZCI6ImE3MDg4N2JlLTk2YTctNDExMi1hYmMwLWNkMTI1ZTJlNzMzMyIsIkNoYXJpdHlJZCI6MTQzMTAzLCJTaXplIjoibCIsIlJlZmVyZW5jZSI6ImliaHUiLCJUeXBlIjoiRG9uYXRlIn0=" />
+							<img src="//widgets.justgiving.com/Button?p=eyJJZCI6ImE3MDg4N2JlLTk2YTctNDExMi1hYmMwLWNkMTI1ZTJlNzMzMyIsIkNoYXJpdHlJZCI6MTQzMTAzLCJTaXplIjoibCIsIlJlZmVyZW5jZSI6ImliaHUiLCJUeXBlIjoiRG9uYXRlIn0=" alt={`just giving logo`}/>
 						</a>
 					</div>
 				</div>
