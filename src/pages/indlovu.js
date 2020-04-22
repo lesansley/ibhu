@@ -1,16 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+
+import indlovuStyles from './indlovu.module.scss';
 
 const Indlovu = () => {
 	return (
 		<Layout>
-			<SEO title="Indlovu Gin page" />
-			<h1>Hi from the Indlovu page</h1>
+			<SEO title='Indlovu Gin page' />
+			<h1 className={indlovuStyles.heading}>Hi from the Indlovu page</h1>
 			<p>Welcome to Indlovu page</p>
-			<Link to="/">Go back to the homepage</Link>
+			<Link to='/'>Go back to the homepage</Link>
 		</Layout>
 	)
 }
