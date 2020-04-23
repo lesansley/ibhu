@@ -1,5 +1,5 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import { v4 as uuidv4 } from 'uuid';
@@ -9,43 +9,62 @@ import sliderStyles from './slider.module.scss';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
-const Slider = () => {
-	const data = useStaticQuery(graphql`
-		query {
-			allFile(filter: {relativeDirectory: {eq: "carousel"}}) {
-				edges {
-					node {
-						childImageSharp {
-							fluid {
-								...GatsbyImageSharpFluid
-							}
-						}
-						name
-					}
-				}
-			}
-		}
-	`)
-	return (
-		<AutoplaySlider
-			play={true}
-			cancelOnInteraction={false} // should stop playing on user interaction
-			interval={3000}
-			className={sliderStyles.container}
-		>
-			{data.allFile.edges.map(edge => {
-				return (
-					<div key={uuidv4()} className={sliderStyles.imageContainer}>
-						<Img
-							className={sliderStyles.image}
-							alt={edge.node.alt}
-							fluid={edge.node.childImageSharp.fluid}
-						/>
-					</div>
-				)
-			})}
-		</AutoplaySlider>
-	)
+class Slider extends Component {
+	static defaultProps = {
+    play: true,
+		cancelOnInteraction: false,
+		interval: 3000,
+		bullets: true,
+		organicArrows: true,
+		fillParent: false,
+		infinite: true,
+		buttons: true,
+		customContent: true,
+	}
+	
+	render () {
+		return (
+			<div>
+				<AutoplaySlider
+					className={sliderStyles.container}
+					play={this.props.play}
+					cancelOnInteraction={this.props.cancelOnInteraction}
+					interval={this.props.interval}
+					bullets={this.props.bullets}
+					organicArrows={this.props.organicArrows}
+					fillParent={this.props.fillParent}
+					infinite={this.props.infinite}
+					buttons={this.props.buttons}
+					customContent={this.props.customContent}
+				>
+					{this.props.images.edges.map(edge => {
+						return (
+							<div key={uuidv4()} className={sliderStyles.imageContainer}>
+								<Img
+									className={sliderStyles.image}
+									alt={edge.node.alt}
+									fluid={edge.node.childImageSharp.fluid}
+								/>
+							</div>
+						)
+					})}
+				</AutoplaySlider>
+			</div>
+		)
+	}
+}
+
+Slider.propTypes = {
+	play: PropTypes.bool,
+	cancelOnInteraction: PropTypes.bool,
+	interval: PropTypes.number,
+	bullets: PropTypes.bool,
+	organicArrows: PropTypes.bool,
+	fillParent: PropTypes.bool,
+	infinite: PropTypes.bool,
+	buttons: PropTypes.bool,
+	customContent: PropTypes.bool,
+	image: PropTypes.object.isRequired
 }
 
 export default Slider 
