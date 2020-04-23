@@ -1,0 +1,12 @@
+.image-container {
+	width: 100%;
+}
+
+.image {
+	flex-grow: 1; // use as much space as available
+	min-width: auto;
+	min-height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	// background-size: contain;
+}

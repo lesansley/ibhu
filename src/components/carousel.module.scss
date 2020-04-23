@@ -64,11 +64,12 @@
 }
 
 .image {
-	width: 100%;
-	height: auto;
+	flex-grow: 1; // use as much space as available
+	max-width: auto;
+	min-height: auto;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	// background-size: contain;
 	// opacity: 0;
 	animation: slideShow 15s linear infinite 0s;
   // -o-animation: slideShow 12s linear infinite 0s;
