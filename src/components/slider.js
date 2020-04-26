@@ -19,10 +19,10 @@ class Slider extends Component {
 		fillParent: false,
 		infinite: true,
 		buttons: true,
-		customContent: true,
+		customContent: null,
 	}
 	
-	render () {
+	render() {
 		return (
 			<div>
 				<AutoplaySlider
@@ -55,6 +55,7 @@ class Slider extends Component {
 }
 
 Slider.propTypes = {
+	cssModule: PropTypes.object,
 	play: PropTypes.bool,
 	cancelOnInteraction: PropTypes.bool,
 	interval: PropTypes.number,
@@ -63,8 +64,8 @@ Slider.propTypes = {
 	fillParent: PropTypes.bool,
 	infinite: PropTypes.bool,
 	buttons: PropTypes.bool,
-	customContent: PropTypes.bool,
-	image: PropTypes.object.isRequired
+	customContent: PropTypes.func,
+	images: PropTypes.object.isRequired
 }
 
 export default Slider 

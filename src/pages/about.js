@@ -1,17 +1,40 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Divider from '../components/divider';
+import Image from '../components/image';
+import Slider from '../components/slider';
 
-import aboutStyles from './about.module.scss'
+import aboutStyles from './about.styles/about.module.scss'
+import coreStyles from './about.styles/core-styles.scss'
 
 const About = () => {
-	const logo = useStaticQuery(graphql`
+	const data = useStaticQuery(graphql`
 		query {
 			file(name: {eq: "ibhu-logo-black"}) {
 				name
 				publicURL
+				childImageSharp {
+					fluid {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+			allFile(filter: {relativeDirectory: {eq: "quotes"}}) {
+				edges {
+					node {
+						publicURL
+						relativePath
+						name
+						childImageSharp {
+							fluid {
+								...GatsbyImageSharpFluid
+							}
+						}
+					}
+				}
 			}
 		}
 	`)
@@ -23,7 +46,10 @@ const About = () => {
 				<div>
 					<Divider />
 					<div className={aboutStyles.imageCentre}>
-						<img src={logo.file.publicURL} alt={logo.file.name} />
+						<Img
+							fluid={data.file.childImageSharp.fluid}
+							alt={data.file.name}
+						/>
 					</div>
 					<Divider />
 					<div className={aboutStyles.container}>
@@ -31,7 +57,18 @@ const About = () => {
 					</div>
 				</div>
 				<div className={aboutStyles.quoteContainer}>
-					<div>Quotes</div>
+					<div className={aboutStyles.quoteContent}>
+						<Slider
+							cssModule={coreStyles}
+							images={data.allFile}
+							play={true}
+							bullets={false}
+							organicArrows={true}
+							infinite={true}
+							buttons={false}
+							fillParent={false}
+						/>
+					</div>
 				</div>
 				<div>
 					The Ibhu brand was founded in the spirit of creativity and innovation, 
@@ -41,8 +78,18 @@ const About = () => {
 				<Divider />
 				<div>
 					<div>The creative process</div>
+					<div className={aboutStyles.creativityContainer}>
+						<div>
+							<Image filename='knowledge' />
+						</div>
+						<div>
+							<Image filename='connections' />
+						</div>
+						<div>
+							<Image filename='experience' />
+						</div>
+					</div>
 				</div>
-
 			</div>
 		</Layout>
 	)
