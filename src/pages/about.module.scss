@@ -1,8 +1,7 @@
-@import '../../styles/base/variables';
+@import '../styles/base/variables';
 
 .quote-container {
 	background-color: $IBHU_BLUE;
-	// min-height: 200px;
 	width: 100vw;
 	position: relative;
 	margin-left: -50vw;
@@ -10,14 +9,14 @@
 	margin-top: 100px;
 	left: 50%;
 }
-.quote-content {
+.quote-content .creativity-content {
 	max-width: 500px;
 	max-height: auto;
 	display: contents;
 }
-
 .quote-content>div {
 	margin: 20px;
+	color: $IBHU_WHITE;
 }
 
 .slider {
@@ -26,6 +25,21 @@
 .image-centre {
 	text-align: center;
 }
-.creativity-container {
+.abcd-content {
+	padding: 20px;
+	font-size: larger;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+.abcd {
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+.abcd-attribute {
+	font-style: italic;
+	align-items: flex-end;
+	margin-bottom: 0px;
+}
+
+

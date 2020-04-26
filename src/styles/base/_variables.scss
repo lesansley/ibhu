@@ -3,11 +3,35 @@ $BASE_FONT_SIZE: 19px;
 $BASE_LINE_HEIGHT: 1.9rem;
 $IBHU_BLUE: rgb(35, 93, 138);
 $IBHU_BLACK: rgb(35, 31, 32);
+$IBHU_GREY: #6a6a6a;
 $IBHU_WHITE: rgb(255, 255, 255);
 $INDLOVU_ORANGE: rgb(198, 8, 19);
 $INDLOVU_PINK: rgb(226, 51, 119);
 $INDLOVU_GREEN: rgb(91, 181, 43);
 
+// SLIDER ELEMENT
+$root-element: 'awssld';
+$cos45: 0.7071;
+$transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
+$slider-height-percentage: 60%;
+$slider-transition-duration: 575ms;
+
+$organic-arrow-color: $IBHU_GREY;
+$organic-arrow-thickness: 4px;
+$organic-arrow-height: 40px;
+$organic-arrow-border-radius: 0;
+$control-button-width: 10%;
+$control-button-height: 25%;
+$control-button-opacity: 0.5;
+$control-button-hover-opacity: 0.75;
+$control-button-background: transparent;
+$loader-bar-color: $INDLOVU_ORANGE;
+$loader-bar-height: 6px;
+$control-bullet-color: $IBHU_GREY;
+$control-bullet-active-color: $IBHU_GREY;
+$content-background-color: transparent;
+
+//BREAKPOINTS
 $breakpointMega: 1600px;
 $breakpointLarge: 990px;
 $breakpointMed: 767px;
