@@ -39,10 +39,9 @@ const Layout = ({ children, banner = false }) => {
 				{banner &&
 					<Slider
 						images={data.allFile}
-					bullets={false}
+						bullets={false}
 					/>
 				} 
-				<div className={layoutStyles.banner}>{banner}</div>
 				<div className={layoutStyles.content}>
 					<main>{children}</main>
 				</div>
