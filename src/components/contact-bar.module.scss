@@ -1,0 +1,30 @@
+@import '../styles/base/variables';
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.list {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.list-item a {
+	text-decoration: none;
+	color:$IBHU_BLACK;
+}
+.icon-list {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.icon-item {
+	flex-grow: 1;
+}
+.icon-image {
+	flex-grow: 1;
+	max-width: 50px;
+	height: auto;
+}
+@media (min-width: $breakpointMed) {
+	
+}

@@ -1,0 +1,41 @@
+@import '../styles/base/variables';
+
+.form {
+	background: $IBHU_WHITE;
+}
+.form .p {
+  margin: 0;
+}
+.input:focus,
+.textarea:focus {
+  outline: 3px solid $IBHU_BLUE;
+}
+.label {
+  display: block;
+}
+.input,
+.text-area,
+.button {
+	border: 1px solid $IBHU_GREY;
+	width: 100%;
+	padding: 1em;
+}
+.button {
+	background: $IBHU_BLUE;
+	color: $IBHU_WHITE;
+	border: 0;
+}
+
+@media (min-width: $breakpointMed) {
+	.button {
+		width: 30%;
+		background: $IBHU_WHITE;
+		color: $IBHU_BLACK;
+		border: 1px solid $IBHU_GREY;
+	}
+	.button:hover, .button:focus {
+		background: $IBHU_BLUE;
+		outline: 0;
+		color: $IBHU_WHITE;
+	}
+}
