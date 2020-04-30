@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 import Image from '../components/image'
-import SEO from "../components/seo"
+import SEO from '../components/seo'
 import ProudlySA from '../components/proudlysa'
 
 import storyStyles from './story.module.scss'
@@ -10,7 +10,7 @@ import storyStyles from './story.module.scss'
 const Story = () => {
 	return (
 		<Layout>
-			<SEO title="Story page" />
+			<SEO title='Story page' />
 			<h1>Our Story</h1>
 			<div className={storyStyles.container}>
 				<div className={storyStyles.storyHead}>
@@ -23,10 +23,10 @@ const Story = () => {
 					to society.</p>
 				</div>
 				<div className={`${storyStyles.image} ${storyStyles.storyBioPic}`}>
-					<Image filename="les-and-paula.jpg" />
+					<Image filename='les-and-paula.jpg' alt='Les and Paula' />
 				</div>
 				<div className={`${storyStyles.image} ${storyStyles.storyElliePic}`}>
-					<Image filename="elephant-foraging.jpg" />
+					<Image filename='elephant-foraging.jpg' alt='Foraging elephant'/>
 				</div>
 				<div className={storyStyles.storyStory}>
 					<p>Shortly after we arrived Paula had an opportunity to go to Kenya on safari and it was while she was 
@@ -38,7 +38,7 @@ const Story = () => {
 					… would it be possible to make <strong>elephant dung gin</strong>?
 				</div>
 				<div className={`${storyStyles.image} ${storyStyles.storyGinPic}`}>
-					<Image filename="indlovu-with-glass.jpg" />
+					<Image filename='indlovu-with-glass.jpg' alt='Indlovu gin presentation box and bottle' />
 				</div>
 				<div className={storyStyles.storySummary}>
 					<h2 className={storyStyles.uppercase}>So we did.</h2>

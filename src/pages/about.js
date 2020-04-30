@@ -60,7 +60,6 @@ const About = () => {
 			}
 		}
 	`)
-	console.log(JSON.stringify(data))
 	return (
 		<Layout>
 			<SEO title='About page' />
