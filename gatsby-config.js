@@ -1,24 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Ibhu - Dare to be different.`,
+		title: `Ibhu - Dare to be different`,
+		name: 'Ibhu',
     description: `Home of Africa's Original Elephant Dung Gin`,
-		author: `Les Ansley`,
-		email: `info 'at' ibhu.co.za`,
+		contact: `Les Ansley`,
+		email: `info@ibhu.co.za`,
+		tel: '+27 66 216 9667',
 		lang: 'en',
 		social: [
 			{
 				name: 'facebook',
-				url: 'https://www.facebook.com/Indlovugin/'
+				url: 'https://www.facebook.com/Indlovugin/',
+				handle: ''
 			},
 			{
 				name: 'instagram',
 				url: 'https://www.instagram.com/indlovugin',
-				site: '@indlovugin'
-			},
-			{
-				name: 'twitter',
-				url: 'https://twitter.com/indlovugin',
-				site: '@indlovugin'
+				handle: '@indlovugin'
 			},
 		],
 		menuLinks:[
