@@ -1,3 +1,5 @@
+@import '../styles/base/variables';
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -5,12 +7,17 @@
 }
 
 .content {
-	margin: 0 auto;
-	max-width: 960px;
 	padding: 1rem;
 	flex-grow: 1;
 }
 
 Header {
 	z-index: 100;
+}
+
+@media (min-width: $breakpointMed) {
+	.content {
+		max-width: 960px;
+		margin: 0 auto;
+	}
 }
