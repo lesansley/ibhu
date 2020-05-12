@@ -52,9 +52,6 @@ module.exports = {
 	},
   plugins: [
 		`gatsby-plugin-react-helmet`,
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
-		`gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -76,6 +73,21 @@ module.exports = {
         path: `${__dirname}/src/data/`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
+		},
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
+		`gatsby-plugin-sass`,
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `gatsby-starter-default`,
+				short_name: `gatsby`,
+				start_url: `/`,
+				background_color: `#663399`,
+				theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `src/images/icons/ibhu-black.png`
+			}
 		},
 		{
 			resolve: `gatsby-source-contentful`,
