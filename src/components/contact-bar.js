@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import { v4 as uuidv4 } from 'uuid';
 import Img from 'gatsby-image';
+import h from '../helpers';
 import contactBarLayout from './contact-bar.module.scss';
 
 class ContactBar extends Component {
@@ -22,10 +23,6 @@ class ContactBar extends Component {
 				return socials[i].url
 			}
 		}
-	}
-
-	telFormat(num) {
-		return num.replace(/\s+/g, '');
 	}
 
 	render() {
@@ -70,7 +67,7 @@ class ContactBar extends Component {
 										<MdEmail />&nbsp;<a href={`mailto:${data.site.siteMetadata.email}`}>{data.site.siteMetadata.email}</a>
 									</li>
 									<li className={contactBarLayout.listItem} key={uuidv4()}>
-										<MdLocalPhone />&nbsp;<a href={`tel:${this.telFormat(data.site.siteMetadata.tel)}`}>{data.site.siteMetadata.tel}</a>
+										<MdLocalPhone />&nbsp;<a href={`tel:${h.removeBlanks(data.site.siteMetadata.tel)}`}>{data.site.siteMetadata.tel}</a>
 									</li>
 								</ul>
 							</div>
