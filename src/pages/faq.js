@@ -14,7 +14,7 @@ import faqStyles from './faq.module.scss'
 const FAQ = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allContentfulFaq {
+			allContentfulWebsiteFaq {
 				edges {
 					node {
 						answer {
