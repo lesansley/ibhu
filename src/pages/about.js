@@ -64,71 +64,67 @@ const About = () => {
 		<Layout>
 			<SEO title='About page' />
 			<div>
-				<div>
-					<Divider />
-					<div className={aboutStyles.imageCentre}>
-						<Img
-							fluid={data.logo.childImageSharp.fluid}
-							alt={data.logo.name}
-						/>
-					</div>
-					<Divider />
-					<div className={aboutStyles.imageCentre}>
-						<Img
-							fluid={data.story.childImageSharp.fluid}
-							alt={data.story.name}
-						/>
-					</div>
-					<div className={aboutStyles.container}>
-						<div>We dare to think <span>differently</span></div>
-					</div>
+				<div className={aboutStyles.imageCentre}>
+					<Img
+						fluid={data.logo.childImageSharp.fluid}
+						alt={data.logo.name}
+					/>
 				</div>
-				<div className={aboutStyles.quoteContainer}>
-					<div className={aboutStyles.quoteContent}>
+				<Divider />
+				<div className={aboutStyles.imageCentre}>
+					<Img
+						fluid={data.story.childImageSharp.fluid}
+						alt={data.story.name}
+					/>
+				</div>
+				<div className={aboutStyles.container}>
+					<div>We dare to think <span>differently</span></div>
+				</div>
+			</div>
+			<div className={aboutStyles.quoteContainer}>
+				<div className={aboutStyles.quoteContent}>
+					<Slider
+						cssModules={quotesStyles}
+						images={data.quotes}
+						play={true}
+						bullets={false}
+						organicArrows={true}
+						infinite={true}
+						buttons={false}
+						fillParent={false}
+					/>
+				</div>
+			</div>
+			<Divider />
+			<div>
+				The Ibhu brand was founded in the spirit of creativity and innovation, 
+				it is the energy behind all of our Africa-centric products. Creativity 
+				is at the core of Ibhu, from idea generation to product innovation.
+			</div>
+			<div>
+				<div className={aboutStyles.creativityContainer}>
+					<div className={aboutStyles.creativityContent}>
 						<Slider
-							cssModules={quotesStyles}
-							images={data.quotes}
-							play={true}
-							bullets={false}
+							images={data.creativity}
+							play={false}
+							bullets={true}
 							organicArrows={true}
 							infinite={true}
-							buttons={false}
+							buttons={true}
 							fillParent={false}
 						/>
 					</div>
 				</div>
-				<Divider />
-				<div>
-					The Ibhu brand was founded in the spirit of creativity and innovation, 
-					it is the energy behind all of our Africa-centric products. Creativity 
-					is at the core of Ibhu, from idea generation to product innovation.
-				</div>
-				<div>
-					<div className={aboutStyles.creativityContainer}>
-						<div className={aboutStyles.creativityContent}>
-							<Slider
-								images={data.creativity}
-								play={false}
-								bullets={true}
-								organicArrows={true}
-								infinite={true}
-								buttons={true}
-								fillParent={false}
-							/>
+				<div className={aboutStyles.quoteContainer}>
+					<div className={aboutStyles.quoteContent}>
+						<div className={aboutStyles.abcdContent}>
+							<div>
+								<span className={aboutStyles.abcd}>A</span>lways <span className={aboutStyles.abcd}>B</span>e <span className={aboutStyles.abcd}>C</span>onnecting the <span className={aboutStyles.abcd}>D</span>ots
+								<p className={aboutStyles.abcdAttribute}>Richard Branson</p>
+							</div>
 						</div>
 					</div>
-					<div className={aboutStyles.quoteContainer}>
-						<div className={aboutStyles.quoteContent}>
-							<div className={aboutStyles.abcdContent}>
-								<div>
-									<span className={aboutStyles.abcd}>A</span>lways <span className={aboutStyles.abcd}>B</span>e <span className={aboutStyles.abcd}>C</span>onnecting the <span className={aboutStyles.abcd}>D</span>ots
-									<p className={aboutStyles.abcdAttribute}>Richard Branson</p>
-								</div>
-							</div>
-					</div>
 				</div>
-				</div>
-				<Divider />
 			</div>
 		</Layout>
 	)

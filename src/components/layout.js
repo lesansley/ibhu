@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 import Slider from './slider'
+import Divider from './divider';
 import layoutStyles from './layout.module.scss';
 
 const Layout = ({ children, banner = false }) => {
@@ -43,7 +44,9 @@ const Layout = ({ children, banner = false }) => {
 					/>
 				} 
 				<div className={layoutStyles.content}>
+					<Divider />
 					<main>{children}</main>
+					<Divider />
 				</div>
 				<Footer />
 			</div>

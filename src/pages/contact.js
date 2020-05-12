@@ -60,10 +60,10 @@ class Contact extends Component {
 				render={data => (
 					<Layout>
 						<SEO title='Contact' />
+						<ContactBar />
+						<Divider />
 						<h1>Contact us</h1>
 						{display}
-						<Divider />
-						<ContactBar />
 					</Layout>
 				)}
 			/>
