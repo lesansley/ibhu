@@ -1,8 +1,10 @@
 @import '../styles/base/variables';
 
 .container {
-	background: $IBHU_WHITE;
+	background-image: linear-gradient($IBHU_WHITE, $IBHU_WHITE_90);
 	padding: 1rem 1rem;
+	width: 100%;
+	position: fixed;
 }
 
 .logo-container {

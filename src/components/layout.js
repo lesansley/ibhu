@@ -35,22 +35,24 @@ const Layout = ({ children, banner = false }) => {
 
   return (
 		<React.Fragment>
-			<div className={layoutStyles.container}>
+			<div className={layoutStyles.page}>
 				<Header siteTitle={data.site.siteMetadata.title} />
-				{banner &&
-					<Slider
-						images={data.allFile}
-						bullets={false}
-					/>
-				} 
-				<div className={layoutStyles.content}>
-					<Divider />
-					<main>{children}</main>
-					<div className={layoutStyles.bottom}>
-						<Divider/>
+				<div className={layoutStyles.container}>
+					{banner &&
+						<Slider
+							images={data.allFile}
+							bullets={false}
+						/>
+					} 
+					<div className={layoutStyles.content}>
+						<Divider />
+						<main>{children}</main>
+						<div className={layoutStyles.bottom}>
+							<Divider/>
+						</div>
 					</div>
+					<Footer />
 				</div>
-				<Footer />
 			</div>
     </React.Fragment>
   )

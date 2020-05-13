@@ -15,7 +15,7 @@ const Story = () => {
 					<h2 className={storyStyles.uppercase}>We have crafted an exclusive gin that encapsulates the essence of Africa</h2>
 				</div>
 				<div className={storyStyles.storyIntro}>
-					<p>My name is Les Ansley and, together with my wife Paula have jumped into the world of gin.</p>
+					<p>My name is Les Ansley and, together with my wife Paula, have jumped into the world of gin.</p>
 					<p>We recently moved the family back to South Africa after spending 15 years in the UK.
 					We felt <strong>South Africa offered opportunities</strong> both in terms of enterprise and also being able to contribute
 					to society.</p>
