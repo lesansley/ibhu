@@ -42,7 +42,7 @@ const FAQ = () => {
 		<Layout>
 			<SEO title='FAQ' />
 			<h1>Frequently asked questions</h1>
-			<div className={faqStyles.container}>
+			<div>
 				{edges.map(edge => {
 					return (
 						<Collapsible

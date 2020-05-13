@@ -46,7 +46,9 @@ const Layout = ({ children, banner = false }) => {
 				<div className={layoutStyles.content}>
 					<Divider />
 					<main>{children}</main>
-					<Divider />
+					<div className={layoutStyles.bottom}>
+						<Divider/>
+					</div>
 				</div>
 				<Footer />
 			</div>

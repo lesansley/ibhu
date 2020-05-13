@@ -12,7 +12,7 @@ import quotesStyles from './about-quotes.scss';
 const About = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			logo: file(name: {eq: "ibhu-logo-black"}) {
+			logo: file(name: {eq: "ibhu-black"}) {
 				name
 				publicURL
 				childImageSharp {
