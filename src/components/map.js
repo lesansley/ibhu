@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { v4 as uuidv4 } from 'uuid';
 import h from '../helpers';
@@ -66,79 +65,53 @@ export class MapContainer extends Component {
 			overflow: 'hidden',
 			marginBottom: '20px',
 		};
-
 		if (!this.props.loaded) {
       return <div>Loading...</div>
     }
 		return (
-			<StaticQuery
-				query={graphql`
-					query {
-						retailers: allContentfulWebsiteRetailers {
-							nodes {
-								latlng {
-									lat
-									lon
-								}
-								name
-								province
-								tel
-								url
-								email
-								contact
-							}
-						}
-					}
-				`}
-				render={ data => {
-					return (
-						<Map
-							containerStyle={containerStyle}
-							google={this.props.google}
-							zoom={this.state.zoom}
-							initialCenter={{
-								lat: this.state.initialCenter.lat,
-								lng: this.state.initialCenter.lng
-							}}
-							center={{
-								lat: this.state.center.lat,
-								lng: this.state.center.lng
-							}}
-							onClick={this.onMapClick.bind(this)}
-							onDragend={this.onMapDragEnd.bind(this)}
-						>
-							{data.retailers.nodes.map( retailers => {
-								return (
-									<Marker
-										key={uuidv4()}
-										onClick={this.onMarkerClick.bind(this)}
-										title={retailers.name}
-										position={{ lat: retailers.latlng.lat, lng: retailers.latlng.lon }}
-										email={retailers.email}
-										tel={retailers.tel}
-										province={retailers.province}
-										url={retailers.url}
-										options={{icon:`http://maps.google.com/mapfiles/ms/icons/purple-dot.png`}}
-									/>
-								)
-							})}
-							<InfoWindow
-								onClose={this.onInfoWindowClose.bind(this)}
-								marker={this.state.activeMarker}
-								visible={this.state.showingInfoWindow}
-							>
-								<div>
-									<span><b>{this.state.activeMarker.title}</b></span>
-									{this.state.activeMarker.tel && <span><br /><b>tel:</b> <a href={`tel:${h.removeBlanks(this.state.activeMarker.tel)}`}>{this.state.activeMarker.tel}</a></span>}
-									{this.state.activeMarker.email && <span><br /><b>email:</b> <a href={`mailto:${this.state.activeMarker.email}`}>{this.state.activeMarker.email}</a></span>}
-									{this.state.activeMarker.url && <span><br /><a href={this.state.activeMarker.url} target='_blank' rel='noopener noreferrer'>website</a></span>}
-								</div>
-							</InfoWindow>
-						</Map>
-					)
+			<Map
+				containerStyle={containerStyle}
+				google={this.props.google}
+				zoom={this.state.zoom}
+				initialCenter={{
+					lat: this.state.initialCenter.lat,
+					lng: this.state.initialCenter.lng
 				}}
+				center={{
+					lat: this.state.center.lat,
+					lng: this.state.center.lng
+				}}
+				onClick={this.onMapClick.bind(this)}
+				onDragend={this.onMapDragEnd.bind(this)}
 			>
-			</StaticQuery>
+				{this.props.data.retailers.nodes.map( retailer => {
+					return (
+						<Marker
+							key={uuidv4()}
+							onClick={this.onMarkerClick.bind(this)}
+							title={retailer.name}
+							position={{ lat: retailer.latlng.lat, lng: retailer.latlng.lon }}
+							email={retailer.email}
+							tel={retailer.tel}
+							province={retailer.province}
+							url={retailer.url}
+							options={{icon:`http://maps.google.com/mapfiles/ms/icons/purple-dot.png`}}
+						/>
+					)
+				})}
+				<InfoWindow
+					onClose={this.onInfoWindowClose.bind(this)}
+					marker={this.state.activeMarker}
+					visible={this.state.showingInfoWindow}
+				>
+					<div>
+						<span><b>{this.state.activeMarker.title}</b></span>
+						{this.state.activeMarker.tel && <span><br /><b>tel:</b> <a href={`tel:${h.removeBlanks(this.state.activeMarker.tel)}`}>{this.state.activeMarker.tel}</a></span>}
+						{this.state.activeMarker.email && <span><br /><b>email:</b> <a href={`mailto:${this.state.activeMarker.email}`}>{this.state.activeMarker.email}</a></span>}
+						{this.state.activeMarker.url && <span><br /><a href={this.state.activeMarker.url} target='_blank' rel='noopener noreferrer'>website</a></span>}
+					</div>
+				</InfoWindow>
+			</Map>
     );
   }
 }

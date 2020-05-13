@@ -4,7 +4,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import { useStaticQuery, graphql } from 'gatsby'
 import Collapsible from 'react-collapsible';
 import { v4 as uuidv4 } from 'uuid'
-
 import Layout from '../components/layout'
 import List from '../components/list'
 import SEO from '../components/seo'
@@ -14,7 +13,7 @@ import faqStyles from './faq.module.scss'
 const FAQ = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allContentfulWebsiteFaq {
+			allContentfulFaq {
 				edges {
 					node {
 						answer {
@@ -30,7 +29,7 @@ const FAQ = () => {
 	const options = {
 		renderNode: {
 			[BLOCKS.UL_LIST]: (node) => {
-				return (<List data={node}/>);
+				return (<List data={node} />);
 			}
 		}
 	}
