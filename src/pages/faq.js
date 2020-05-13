@@ -42,22 +42,25 @@ const FAQ = () => {
 		<Layout>
 			<SEO title='FAQ' />
 			<h1>Frequently asked questions</h1>
-			{edges.map(edge => {
-				return (
-					<Collapsible
-						key={edge.uid}
-						transitionTime={400}
-						trigger={edge.question}
-						className={faqStyles.collapsible}
-						triggerClassName={faqStyles.trigger}
-						triggerOpenedClassName={`${faqStyles.open} ${faqStyles.trigger}`}
-						contentOuterClassName={faqStyles.outer}
-						contentInnerClassName={faqStyles.inner}
-					>
-						{documentToReactComponents(edge.answer, options)}
-					</Collapsible>
-				)
-			})}
+			<div className={faqStyles.container}>
+				{edges.map(edge => {
+					return (
+						<Collapsible
+							key={edge.uid}
+							transitionTime={400}
+							trigger={edge.question}
+							className={faqStyles.collapsible}
+							triggerClassName={faqStyles.trigger}
+							triggerOpenedClassName={`${faqStyles.open} ${faqStyles.trigger}`}
+							contentOuterClassName={faqStyles.outer}
+							contentInnerClassName={faqStyles.inner}
+						>
+							{documentToReactComponents(edge.answer, options)}
+						</Collapsible>
+					)
+				})}
+			</div>
+			
 		</Layout>
 	)
 }

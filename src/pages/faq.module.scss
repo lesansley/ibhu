@@ -1,5 +1,8 @@
 @import '../styles/base/variables';
 
+.container {
+	margin-bottom: 1.45rem;
+}
 .inner {
   padding: 10px;
   border-top: 0;
@@ -12,16 +15,15 @@
     }
   }
 }
-
 .trigger {
 	display: block;
   font-weight: 400;
   text-decoration: none;
   color: grey;
   position: relative;
-  border: 1px solid white;
-  padding: 10px;
-	color: white;
+  border: 1px solid $IBHU_WHITE;
+  padding: 10px 20px 10px 10px;
+	color: $IBHU_WHITE;
 	background-color: $IBHU_BLUE;
   transition: background-color 200ms ease;
 
