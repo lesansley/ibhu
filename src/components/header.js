@@ -17,7 +17,7 @@ const Header = () => {
 						className={headerStyles.link}
 					>
 						<div className={headerStyles.logo}>
-							<Image filename='ibhu-logo-black.png' />
+							<Image filename='ibhu-black.png' />
 						</div>
 					</Link>
 				</div>
