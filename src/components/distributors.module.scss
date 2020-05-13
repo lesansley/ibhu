@@ -1,0 +1,24 @@
+@import '../styles/base/variables';
+
+.list {
+	margin-left: 0px;
+	list-style: none;
+}
+
+.name {
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+.country {
+	font-weight: bold;
+}
+
+.container a {
+	text-decoration: none;
+	color: $IBHU_BLUE;
+}
+
+.container a:hover {
+	text-decoration: underline;
+}
