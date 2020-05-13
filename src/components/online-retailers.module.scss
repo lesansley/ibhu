@@ -1,0 +1,16 @@
+@import '../styles/base/variables';
+
+.container a {
+	text-decoration: none;
+	color: $IBHU_BLACK;
+	font-variant: small-caps;
+}
+
+.container a:hover {
+	text-decoration: underline;
+}
+
+.list {
+	list-style: none;
+	margin-left: 0px;
+}
