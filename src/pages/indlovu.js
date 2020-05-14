@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from '../components/image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -10,9 +11,10 @@ const Indlovu = () => {
 	return (
 		<Layout>
 			<SEO title='Indlovu Gin page' />
-			<h1 className={indlovuStyles.heading}>Hi from the Indlovu page</h1>
-			<p>Welcome to Indlovu page</p>
-			<Link to='/'>Go back to the homepage</Link>
+			<div className={indlovuStyles.imageContainer}>
+				<div className={indlovuStyles.image}><a href='/'><Image filename='indlovu-original-with-bottle.jpg' alt='Original Indlovu gin'/></a></div>
+				<div className={indlovuStyles.image}><a href='/'><Image filename='indlovu-pink-with-bottle.jpg' alt='Pink Indlovu gin' /></a></div>
+			</div>
 		</Layout>
 	)
 }

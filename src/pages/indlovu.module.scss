@@ -1,3 +1,15 @@
-.heading {
-	color: red;
+@import '../styles/base/variables';
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.image {
+	width: 100%;
+	height: auto;
+}
+@media (min-width: $breakpointMed) {
+	.image {
+		width: 50%;
+	}
 }
