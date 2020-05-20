@@ -1,3 +1,5 @@
+@import '../styles/base/variables';
+
 .container {
 	display: grid;
 	column-gap: 30px;
@@ -39,7 +41,7 @@
 .story-proudlysa {
 	grid-area: proudlysa;
 }
-@media (max-width: 700px) {
+@media (max-width: $breakpointMed) {
   .container {
     grid-template-areas:
       'head'
@@ -53,8 +55,9 @@
 			'proudlysa';
   }
 }
-.upper-case {
-	text-transform: uppercase;
+.all-caps {
+	font-variant: small-caps;
+	letter-spacing: 0.15em;
 }
 
 .image {
