@@ -1,8 +1,8 @@
 module.exports = {
-  siteMetadata: {
+	siteMetadata: {
 		title: `Ibhu - Dare to be different`,
 		name: 'Ibhu',
-    description: `Home of Africa's Original Elephant Dung Gin`,
+		description: `Home of Africa's Original Elephant Dung Gin`,
 		contact: `Les Ansley`,
 		email: `info@ibhu.co.za`,
 		tel: '+27 66 216 9667',
@@ -19,34 +19,71 @@ module.exports = {
 				handle: '@indlovugin'
 			},
 		],
-		menuLinks:[
+		breakPoints: [
 			{
-				name:'Home',
-				link:'/'
+				ref: 'mega',
+				value: '1200px'
 			},
 			{
-				name:'Indlovu Gin',
-				link:'/indlovu/'
+				ref: 'large',
+				value: '992px'
 			},
 			{
-				name:'Our Story',
-				link:'/story/'
+				ref: 'med',
+				value: '768px'
 			},
 			{
-				name:'Giving Back',
-				link:'/giving/'
+				ref: 'small',
+				value: '576px'
+			}
+		],
+		menuLinks: [
+			{
+				name: 'Home',
+				link: '/'
 			},
 			{
-				name:'Contact',
-				link:'/contact/'
+				name: 'Our Story',
+				link: '/story/'
 			},
 			{
-				name:'FAQ',
-				link:'/faq/'
+				name: 'Indlovu Gin',
+				link: '/indlovu/'
 			},
 			{
-				name:'About',
-				link:'/about/'
+				name: 'Giving Back',
+				link: '/giving/'
+			},
+			{
+				name: 'Stockists',
+				link: '/stockists/'
+			},
+			{
+				name: 'Contact',
+				link: '/contact/'
+			},
+			
+			{
+				name: 'About',
+				link: '/about/'
+			}
+		],
+		originalMenu: [
+			{
+				name: 'Original',
+				link: '#original'
+			},
+			{
+				name: 'Provenance',
+				link: '#provenance'
+			},
+			{
+				name: 'testamonials',
+				link: '#testamonials'
+			},
+			{
+				name: 'FAQ',
+				link: '#faq'
 			}
 		]
 	},
