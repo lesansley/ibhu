@@ -638,6 +638,10 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+.all-caps {
+	font-variant: small-caps;
+	letter-spacing: 0.15em;
+}
 .row {
 	width: 100%;
 }
