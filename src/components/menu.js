@@ -14,6 +14,10 @@ const Menu = () => {
 						name
 						link
 					}
+					breakPoints {
+						ref
+						value
+					}
         }
       }
     }
@@ -24,7 +28,7 @@ const Menu = () => {
 			<ResponsiveMenu
 				menuOpenButton={<MdMenu size={30} className={menuStyles.menuButton} />}
 				menuCloseButton={<MdClose size={30} className={menuStyles.menuButton} />}
-        changeMenuOn="500px"
+        changeMenuOn='895px'
 				largeMenuClassName={menuStyles.largeMenu}
         smallMenuClassName={menuStyles.smallMenu}
         menu={
