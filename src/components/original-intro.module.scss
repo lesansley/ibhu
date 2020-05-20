@@ -1,0 +1,40 @@
+@import '../styles/base/variables';
+
+.container {
+	display: grid;
+	column-gap: 30px;
+	row-gap: 15px;
+	align-items: center;
+	justify-content: center;
+	grid-template-areas: 
+	'para1'
+	'pic1'
+	'para2'
+	'pic2';
+}
+.pic1 {
+	grid-area: pic1;
+}
+.pic2 {
+	grid-area: pic2;
+}
+.para1 {
+	grid-area: para1;
+}
+.para2 {
+	grid-area: para2;
+}
+.image {
+	min-width: 100px;
+	margin-bottom: 1.45rem;
+}
+.bold {
+	font-style: bold;
+}
+@media (min-width: $breakpointMed) {
+  .container {
+    grid-template-areas:
+		'pic1 para1'
+		'para2 pic2';
+  }
+}
