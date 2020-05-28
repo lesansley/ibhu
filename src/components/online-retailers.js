@@ -20,10 +20,10 @@ const OnlineRetailers = ({ data }) => {
 }
 
 OnlineRetailers.propTypes = {
-	data: PropTypes.shape({
+	data: PropTypes.arrayOf(PropTypes.shape({
 		name: PropTypes.string.isRequired,
 		url: PropTypes.string.isRequired
-	})
+	}))
 }
 
 export default OnlineRetailers

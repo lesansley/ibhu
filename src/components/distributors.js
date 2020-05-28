@@ -22,19 +22,18 @@ const Distributors = ({ data }) => {
 				})}
 			</ul>
 		</div>
-		
 	)
 }
 
 Distributors.propTypes = {
-	data: PropTypes.shape({
+	data: PropTypes.arrayOf(PropTypes.shape({
 		name: PropTypes.string.isRequired,
 		contact: PropTypes.string,
 		email: PropTypes.string,
 		tel: PropTypes.string,
 		url: PropTypes.string,
 		country: PropTypes.array.isRequired
-	}).isRequired
+	})).isRequired
 }
 
 export default Distributors
