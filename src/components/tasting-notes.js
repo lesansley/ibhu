@@ -30,7 +30,6 @@ const TastingNotes = ({ gin }) => {
 		}
 	}
 	notes.sort((a, b) => (a.idx > b.idx) ? 1 : -1)
-	console.log(notes);
 	const options = {
 		renderNode: {
 			[BLOCKS.PARAGRAPH]: (node, children) => (

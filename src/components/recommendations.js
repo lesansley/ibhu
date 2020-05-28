@@ -32,12 +32,12 @@ const Recommendations = ({ gin }) => {
 			{ recommendations.map(n => {
 				return (
 					<div key={uuid4()} className='recommendationContainer'>
-						<div classname='recommendationTitle'>{n.name}</div>
-						<div classname='recommendationSubtitle'>{n.nickname}</div>
-						<ul classname='recommendationIngredientList'>
+						<div className='recommendationTitle'>{n.name}</div>
+						<div className='recommendationSubtitle'>{n.nickname}</div>
+						<ul className='recommendationIngredientList'>
 							{n.ingredients.map(ingredient => {
 								return (
-									<li classname='recommendationIngredient' key={uuid4()}>{ingredient}</li>
+									<li className='recommendationIngredient' key={uuid4()}>{ingredient}</li>
 								)
 							})}
 						</ul>

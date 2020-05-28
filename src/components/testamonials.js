@@ -1,36 +1,100 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { Component } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import { v4 as uuid4 } from 'uuid';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import testamonialsStyles from './testamonials.module.scss';
 
-const Testamonials = () => {
-	const data = useStaticQuery(graphql`
-		query {
-			testamonials: allContentfulTestamonials {
-				edges {
-					node {
-						name
-						quote {
-							json
+class Testamonials extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			idx: 0,
+			count: 0
+		}
+	}
+
+	text = ({ testamonials }) => {
+		for (let i = 0; i < testamonials.totalCount; i++) {
+			return (
+				<div>{testamonials.edges[i].node.name}</div>
+			)
+		}
+		
+	}
+
+	drcOptions = {
+		renderNode: {
+			[BLOCKS.PARAGRAPH]: (node, children) => (
+				<p>{children}</p>
+			)
+		}
+	};
+
+	render() {
+		return (
+			<StaticQuery
+				query={(graphql`
+					query {
+						testamonials: allContentfulTestamonials {
+							totalCount
+							edges {
+								node {
+									name
+									quote {
+										json
+									}
+								}
+							}
 						}
 					}
-				}
-			}
-		}
-	`)
-	
-	return (
-		<div>
-			{data.testamonials.edges.map(edge => {
-				return (
-					<div>{edge.node.name}</div>
-				)
-			})}
-		</div>
-
-	)
+				`)}
+				render={data => (
+					<>
+						<div>{this.text(data)}</div>
+						<div>
+							{data.testamonials.edges.map(edge => {
+								return (
+									<div key={uuid4()}>
+										<div>{documentToReactComponents(edge.node.quote.json, this.drcOptions)}</div>
+										<div>{edge.node.name}</div>
+									</div>
+								)
+							})}
+						</div>
+					</>
+				)}
+			/>
+		)
+	}
 }
+
+// const Testamonials = () => {
+// 	const data = useStaticQuery(graphql`
+// 		query {
+// 			testamonials: allContentfulTestamonials {
+// 				edges {
+// 					node {
+// 						name
+// 						quote {
+// 							json
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	`)
+	
+// 	return (
+// 		<div>
+// 			{data.testamonials.edges.map(edge => {
+// 				return (
+// 					<div>{edge.node.name}</div>
+// 				)
+// 			})}
+// 		</div>
+
+// 	)
+// }
 
 export default Testamonials

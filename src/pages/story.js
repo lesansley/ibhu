@@ -12,7 +12,7 @@ const Story = () => {
 			<h1 className='all-caps'>Our Story</h1>
 			<div className={storyStyles.container}>
 				<div className={storyStyles.storyHead}>
-					<h2 className='all-caps'>We have crafted an exclusive gin that encapsulates the essence of Africa</h2>
+					<h2 className='all-caps'>We have crafted an exclusive gin that encapsulates the Essence of Africa</h2>
 				</div>
 				<div className={storyStyles.storyIntro}>
 					<p>My name is Les Ansley and, together with my wife Paula, have jumped into the world of gin.</p>
@@ -39,7 +39,7 @@ const Story = () => {
 					<Image filename='indlovu-with-glass.jpg' alt='Indlovu gin presentation box and bottle' />
 				</div>
 				<div className={storyStyles.storySummary}>
-					<h2 className='all-caps'>So we did.</h2>
+					<h2 className='all-caps'>So we did</h2>
 					<p>That is how Indlovu gin was born – a gin <strong>made in Africa … designed by elephants</strong>. ‘Indlovu’ is the word
 					for elephant in several African languages and we use the foraging habits of the world’s largest land
 					animals to select the botanicals used in the ginning process.</p>

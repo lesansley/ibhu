@@ -25,7 +25,9 @@ const Original = () => {
 				<h1 className={`${originalStyles.h1} all-caps`}>Indlovu Original <span className={originalStyles.large}>Gin</span></h1>
 				<OriginalIntro />
 			</div>
-			<Divider />
+			<div className={originalStyles.large}>
+				<Divider />
+			</div>
 			<div id='provenance' className={originalStyles.hyperJump}>
 				<h2   className='all-caps'>Provenance</h2>
 				<Provenance />
@@ -35,12 +37,16 @@ const Original = () => {
 				<h2 className='all-caps'>Tasting Notes</h2>
 				<TastingNotes gin='original' />
 			</div>
-			<Divider />
+			<div className={originalStyles.large}>
+				<Divider />
+			</div>
 			<div id='recommendations' className={originalStyles.hyperJump}>
 				<h2  className='all-caps'>Recommendations</h2>
 				<Recommendations gin='original' />
 			</div>
-			<Divider />
+			<div className={originalStyles.large}>
+				<Divider />
+			</div>
 			<div id='testamonials' className={originalStyles.hyperJump}>
 				<h2  className='all-caps'>Testamonials</h2>
 				<Testamonials />
