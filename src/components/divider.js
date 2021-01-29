@@ -19,3 +19,16 @@ const Divider = () => {
 }
 
 export default Divider
+
+/*
+query {
+	allFile(filter: {relativeDirectory: {eq: "pattern"}}) {
+    edges {
+      node {
+        publicURL
+				name
+      }
+    }
+  }
+}
+*/

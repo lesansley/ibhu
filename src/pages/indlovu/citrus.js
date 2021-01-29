@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import PinkMenu from '../../components/pink-menu';
+import CitrusMenu from '../../components/citrus-menu';
 import FAQ from '../../components/faq';
 import Divider from '../../components/divider';
 import Recommendations from '../../components/recommendations';
@@ -12,17 +12,17 @@ import OriginalIntro from '../../components/original-intro';
 import expressionsStyles from './expressions.module.scss';
 
 
-const Pink = () => {
+const Citrus = () => {
 	return (
 		<Layout>
-			<SEO title='Indlovu Pink Prickly Pear and Vanilla Gin' />
+			<SEO title='Indlovu Citrus Orange and Marula Gin' />
 			<div className={expressionsStyles.menuContainer} >
 				<div className={expressionsStyles.menu}>
-					<PinkMenu />
+					<CitrusMenu />
 				</div>
 			</div>
-			<div id='pink' className={expressionsStyles.hyperJump}>
-				<h1 className={`${expressionsStyles.h1} all-caps`}>Indlovu Pink <span className={expressionsStyles.large}>Gin</span></h1>
+			<div id='citrus' className={expressionsStyles.hyperJump}>
+				<h1 className={`${expressionsStyles.h1} all-caps`}>Indlovu Citrus <span className={expressionsStyles.large}>Gin</span></h1>
 				<OriginalIntro />
 			</div>
 			<div className={expressionsStyles.large}>
@@ -51,15 +51,8 @@ const Pink = () => {
 				<h2  className='all-caps'>Testamonials</h2>
 				<Testamonials />
 			</div>
-			<Divider />
-			<div id='faq' className={expressionsStyles.hyperJump}>
-				<h2  className='all-caps'>
-					<span className={expressionsStyles.small}>FAQs</span>
-					<span className={expressionsStyles.large}>Frequently Asked Questions</span></h2>
-				<FAQ />
-			</div>
 		</Layout>
 	)
 }
 
-export default Pink
+export default Citrus

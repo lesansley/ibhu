@@ -1,13 +1,13 @@
 @import '../styles/base/variables';
 
 .list {
-	background-color: $INDLOVU_RED;
+	background-color: $INDLOVU_PINK;
 }
 .list-item a:hover {
-	color: $INDLOVU_RED;
+	color: $INDLOVU_PINK;
 }
 @media (min-width: $breakpointMed) {
 	.container {
-		background-color: $INDLOVU_RED;
+		background-color: $INDLOVU_PINK;
 	}
 }
