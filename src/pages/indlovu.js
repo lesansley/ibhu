@@ -11,8 +11,9 @@ const Indlovu = () => {
 		<Layout>
 			<SEO title='Indlovu Gin page' />
 			<div className={indlovuStyles.imageContainer}>
-				<div className={indlovuStyles.image}><Link to='/indlovu/original/'><Image filename='indlovu-original-with-bottle.jpg' alt='Original Indlovu gin'/></Link></div>
-				<div className={indlovuStyles.image}><Link to='/indlovu/pink/'><Image filename='indlovu-pink-with-bottle.jpg' alt='Pink Indlovu gin' /></Link></div>
+				<div className={indlovuStyles.image}><Link to='/indlovu/original/'><Image filename='indlovu-original.jpg' alt='Original Indlovu gin'/></Link></div>
+				<div className={indlovuStyles.image}><Link to='/indlovu/pink/'><Image filename='indlovu-pink.jpg' alt='Pink Indlovu gin' /></Link></div>
+				<div className={indlovuStyles.image}><Link to='/indlovu/citrus/'><Image filename='indlovu-citrus.jpg' alt='Citrus Indlovu gin' /></Link></div>
 			</div>
 		</Layout>
 	)
