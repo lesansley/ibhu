@@ -15,7 +15,7 @@ import originalStyles from './original.module.scss';
 const Original = () => {
 	return (
 		<Layout>
-			<SEO title='Original Gin page' />
+			<SEO title='Indlovu Original Elephant Dung Gin' />
 			<div className={originalStyles.menuContainer} >
 				<div className={originalStyles.menu}>
 					<OriginalMenu />
