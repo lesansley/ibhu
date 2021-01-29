@@ -20,7 +20,6 @@ class Testamonials extends Component {
 				<div>{testamonials.edges[i].node.name}</div>
 			)
 		}
-		
 	}
 
 	drcOptions = {
@@ -51,13 +50,12 @@ class Testamonials extends Component {
 				`)}
 				render={data => (
 					<>
-						<div>{this.text(data)}</div>
 						<div>
 							{data.testamonials.edges.map(edge => {
 								return (
-									<div key={uuid4()}>
+									<div className={testamonialsStyles.quoteBlock} key={uuid4()}>
 										<div>{documentToReactComponents(edge.node.quote.json, this.drcOptions)}</div>
-										<div>{edge.node.name}</div>
+										<div className={testamonialsStyles.name}><p>{edge.node.name}</p></div>
 									</div>
 								)
 							})}
@@ -68,33 +66,5 @@ class Testamonials extends Component {
 		)
 	}
 }
-
-// const Testamonials = () => {
-// 	const data = useStaticQuery(graphql`
-// 		query {
-// 			testamonials: allContentfulTestamonials {
-// 				edges {
-// 					node {
-// 						name
-// 						quote {
-// 							json
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	`)
-	
-// 	return (
-// 		<div>
-// 			{data.testamonials.edges.map(edge => {
-// 				return (
-// 					<div>{edge.node.name}</div>
-// 				)
-// 			})}
-// 		</div>
-
-// 	)
-// }
 
 export default Testamonials
