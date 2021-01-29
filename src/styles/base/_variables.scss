@@ -7,9 +7,9 @@ $IBHU_GREY: rgb(106,106,106);
 $IBHU_WHITE: rgb(255, 255, 255);
 $IBHU_WHITE_90: rgba(255, 255, 255, 0.9);
 $IBHU_WHITE_80: rgba(255, 255, 255, 0.8);
-$INDLOVU_ORANGE: rgb(198, 8, 19);
-$INDLOVU_ORANGE: rgb(198, 8, 19);
-$INDLOVU_PINK: rgb(226, 51, 119);
+$INDLOVU_RED: rgb(209, 36, 33);
+$INDLOVU_ORANGE: rgb(255, 128, 59);
+$INDLOVU_PINK: rgb(230, 51, 117);
 $INDLOVU_GREEN: rgb(91, 181, 43);
 
 // SLIDER ELEMENT
@@ -28,7 +28,7 @@ $control-button-height: 25%;
 $control-button-opacity: 0.5;
 $control-button-hover-opacity: 0.75;
 $control-button-background: transparent;
-$loader-bar-color: $INDLOVU_ORANGE;
+$loader-bar-color: $INDLOVU_RED;
 $loader-bar-height: 6px;
 $control-bullet-color: $IBHU_GREY;
 $control-bullet-active-color: $IBHU_GREY;

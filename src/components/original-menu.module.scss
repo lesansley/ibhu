@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-	background-color: $INDLOVU_ORANGE;
+	background-color: $INDLOVU_RED;
 	padding-top: 0.46rem;
 	padding-bottom: 0.46rem;
 }
@@ -25,7 +25,7 @@
 }
 .list-item a:hover {
 	background-color: $IBHU_WHITE;
-	color: $INDLOVU_ORANGE;
+	color: $INDLOVU_RED;
 }
 .large {
 	display: none;
@@ -38,7 +38,7 @@
 	.container {
 		width: 100vw;
 		height: 86px;
-		background-color: $INDLOVU_ORANGE;
+		background-color: $INDLOVU_RED;
 	}
 	.list {
     float: right;
