@@ -20,14 +20,24 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family:"Font Awesome 5 Free";
+	font-style:normal;
+	font-weight:900;
+	src:url('../fonts/fa-solid-900.eot'),
+		url('../fonts/fa-solid-900.woff2') format("woff2"),
+		url('../fonts/fa-solid-900.woff') format("woff"),
+		url('../fonts/fa-solid-900.ttf') format("truetype"),
+}
+
 * {
   box-sizing: border-box;
 }
-[class*="col-"] {
+/*[class*="col-"] {
   float: left;
   padding: 15px;
   border: 1px solid red;
-}
+}*/
 html {
 	font-family: $FONT_FAMILY;
 	font-size: $BASE_FONT_SIZE;
