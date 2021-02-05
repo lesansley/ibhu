@@ -25,6 +25,14 @@
 	color: $IBHU_WHITE;
 	border: 0;
 }
+.success {
+	color: $IBHU_BLUE;
+}
+.error {
+	font-size: 2rem;
+	padding-top: 20px;
+	color: $INDLOVU_RED;
+}
 
 @media (min-width: $breakpointMed) {
 	.button {

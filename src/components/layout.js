@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormspreeProvider } from '@formspree/react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
@@ -34,7 +35,7 @@ const Layout = ({ children, banner = false }) => {
 	`)
 
   return (
-		<React.Fragment>
+		<FormspreeProvider project="{your-project-id}">
 			<div className={layoutStyles.page}>
 				<Header siteTitle={data.site.siteMetadata.title} />
 				<div className={layoutStyles.container}>
@@ -54,7 +55,7 @@ const Layout = ({ children, banner = false }) => {
 					<Footer />
 				</div>
 			</div>
-    </React.Fragment>
+    </FormspreeProvider>
   )
 }
 
