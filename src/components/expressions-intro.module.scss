@@ -1,0 +1,26 @@
+@import '../styles/base/variables';
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+.item1 {
+	flex-grow: 1;
+}
+.item2 {
+	flex-grow: 1;
+}
+.item3 {
+	flex-grow: 1;
+}
+.image {
+	min-width: 100px;
+	margin-bottom: 1.45rem;
+}
+.bold {
+	font-style: bold;
+}

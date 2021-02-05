@@ -30,15 +30,20 @@
 	font-variant: small-caps;
 	font-style: italic;
 }
+.pink {
+	color: $INDLOVU_PINK;
+}
+.orange {
+	color: $INDLOVU_ORANGE;
+}
 @media (min-width: $breakpointMed) {
 	.menu-container {
 		width: 100%;
 	}
 	.menu {
 		float: right;
-		top: 96px;
-    z-index: 100;
-		margin-bottom: 1.45rem;
+		top: 132px;
+    margin-bottom: 1.45rem;
 		height: 86px;
 	}
 	.hyper-jump:before {
