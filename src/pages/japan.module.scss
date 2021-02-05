@@ -23,6 +23,10 @@
 .top-right a{
 	color:white;
 }
+.logo-image {
+	width: 70px;
+  margin-left: -70px;
+}
 .logo-image img{
 	max-width:80px;
 }
@@ -34,6 +38,7 @@
 }
 .navbar-toggler{
 	color:white;
+	display: none;
 }
 .ptb50{
 	padding:60px 0px;
@@ -70,7 +75,6 @@
 	box-sizing: border-box;
 	background:#efe6da;
 }
-
 .aheria-heading{
 	font-size:30px;
 	font-weight:600;
@@ -147,13 +151,16 @@
 	}
 	.ptb50{
 	padding:30px 0px;
-}
-.h2{
-	font-size:25px;
-}
-.bigheading{
-	font-size:24px;
-}
+	}
+	.h2{
+		font-size:25px;
+	}
+	.bigheading{
+		font-size:24px;
+	}
+	.logo-image {
+		margin-left: 0px;
+	}
 }
 @media only screen and (max-width:554px){
 	

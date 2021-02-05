@@ -17,38 +17,38 @@ const Japan = () => {
 					<div className={`${japanStyles.heroSection} col-12 col-md-12`} style={{ backgroundImage: `url(${data.file.publicURL})` }}>
 					<div className='container'>
 									<div className={`top-right ${japanStyles.topRight} text-center text-md-right pt-3`}>
-							<a href="">インドラブジン　日本語ページ</a>
+							<a href="/japan">インドラブジン　日本語ページ</a>
 										<span className='px-2 text-white'><i className={`fa ${japanStyles.fa} fa-angle-right ${japanStyles.faAngleRight}`}></i></span>
-									<a href="">go to English page</a>
+									<a href="/">go to English page</a>
 						</div>
 							<div className={`container-fluid ${japanStyles.containerFluid} ${japanStyles.row}`}>
-										<div className={`menu ${japanStyles.menu} col-12 p-0`}>
+								<div className={`menu ${japanStyles.menu} col-12 p-0`}>
 									<nav className={`navbar ${japanStyles.navbar} navbar-expand-lg p-0`}>
 										<div>
-								<Link className={`logo-image ${japanStyles.logoImage} navbar-brand`} to="https://ibhu.co.za">
-									<Image filename='ibhu-logo.png' alt='ibhu logo'/>
+											<Link className={`logo-image ${japanStyles.logoImage} navbar-brand`} to="https://ibhu.co.za">
+												<Image filename='ibhu-logo.png' alt='ibhu logo'/>
 											</Link>
-											</div>
-												<button className={`navbar-toggler ${japanStyles.navbarToggler} navbar-toggler`} type="button" data-toggle="collapse" data-target="#navv" aria-controls="navv">
-          				<i className={`fa ${japanStyles.fa} fa-bars ${japanStyles.faBars}`}></i>
-        				</button>
-        				<div className='collapse navbar-collapse' id="navv">
-									<ul className='navbar-nav ml-auto'>
-										<li className='nav-item'>
-											<a className='nav-link page-scroll' href="#インドラブジンとは">インドラブジンとは　</a>
-										</li>
-										<li className='nav-item'>
-											<a className='nav-link page-scroll' href="#インドラブジンのシリーズ">　インドラブジンのシリーズ　</a>
-										</li>
-										<li className='nav-item'>
-											<a className='nav-link page-scroll' href="#品質の保証">品質の保証 </a>
-										</li>
-										<li className='nav-item'>
-											<a className='nav-link page-scroll' href="#sectionD">日本での購入・お問い合わせ</a>
-										</li>
-									</ul>
-								</div>
-							</nav>
+										</div>
+										<button className={`navbar-toggler ${japanStyles.navbarToggler}`} type="button" data-toggle="collapse" data-target="#navv" aria-controls="navv">
+          						<i className={`fa ${japanStyles.fa} fa-bars ${japanStyles.faBars}`}></i>
+        						</button>
+        						<div className='collapse navbar-collapse' id="navv">
+											<ul className='navbar-nav ml-auto'>
+												<li className='nav-item'>
+													<a className='nav-link page-scroll' href="#インドラブジンとは">インドラブジンとは　</a>
+												</li>
+												<li className='nav-item'>
+													<a className='nav-link page-scroll' href="#インドラブジンのシリーズ">　インドラブジンのシリーズ　</a>
+												</li>
+												<li className='nav-item'>
+													<a className='nav-link page-scroll' href="#品質の保証">品質の保証 </a>
+												</li>
+												<li className='nav-item'>
+													<a className='nav-link page-scroll' href="#sectionD">日本での購入・お問い合わせ</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
 						</div>
 					</div>
 				</div>
@@ -294,9 +294,6 @@ const Japan = () => {
 			</div>
 		</div>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script type="text/javascript"></script>
 	</div>
 
@@ -305,3 +302,8 @@ const Japan = () => {
 }
 
 export default Japan
+/**
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+*/

@@ -7,7 +7,7 @@
 }
 
 .container {
-	margin-top: 96px;
+	margin-top: 100px;
 }
 
 .content {
@@ -24,6 +24,10 @@ Header {
 }
 
 @media (min-width: $breakpointMed) {
+	.container {
+		margin-top: 130px;
+	}
+	
 	.content {
 		max-width: 960px;
 		margin: 0 auto;

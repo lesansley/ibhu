@@ -1,0 +1,19 @@
+.container {
+	height: 30px;
+	background-color: black;
+	margin-top: -10px;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.flags {
+	float: right;
+}
+.list {
+	display: inline-flex;
+	list-style-type: none;
+}
+.list-item {
+	list-style-type: none;
+	width: 30px;
+	padding-right: 2px;
+}
