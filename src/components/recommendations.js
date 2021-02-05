@@ -32,8 +32,8 @@ const Recommendations = ({ gin }) => {
 			{ recommendations.map(n => {
 				return (
 					<div key={uuid4()} className='recommendationContainer'>
-						<div className='recommendationTitle'>{n.name}</div>
-						<div className='recommendationSubtitle'>{n.nickname}</div>
+						<div className='recommendationTitle'><h3>{n.name} </h3>
+							<span className='recommendationSubtitle'><h4>({n.nickname})</h4></span></div>
 						<ul className='recommendationIngredientList'>
 							{n.ingredients.map(ingredient => {
 								return (
