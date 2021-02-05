@@ -3,7 +3,6 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import PinkMenu from '../../components/pink-menu';
 import Divider from '../../components/divider';
-import Recommendations from '../../components/recommendations';
 import ExpressionsIntro from '../../components/expressions-intro';
 import RecommendedServe from '../../components/recommended-serve';
 import expressionsStyles from './expressions.module.scss';
