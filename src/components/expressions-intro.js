@@ -3,7 +3,6 @@ import Image from './image';
 import expressionsIntroStyles from './expressions-intro.module.scss';
 
 const ExpressionsIntro = (data) => {
-	console.log(data);
 	function createMarkup() {
 		return {__html: data.htmlText};
 	}
