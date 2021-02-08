@@ -95,7 +95,7 @@ export class MapContainer extends Component {
 							tel={retailer.tel}
 							province={retailer.province}
 							url={retailer.url}
-							options={{icon:`http://maps.google.com/mapfiles/ms/icons/purple-dot.png`}}
+							options={{icon:`https://maps.google.com/mapfiles/ms/icons/purple-dot.png`}}
 						/>
 					)
 				})}
