@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Image from '../components/image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
 import indlovuStyles from './indlovu.module.scss';
 
 const Indlovu = () => {
@@ -11,9 +10,9 @@ const Indlovu = () => {
 		<Layout>
 			<SEO title='Indlovu Gin page' />
 			<div className={indlovuStyles.imageContainer}>
-				<div className={indlovuStyles.image}><Link to='/indlovu/original/'><Image filename='indlovu-original.jpg' alt='Original Indlovu gin'/></Link></div>
-				<div className={indlovuStyles.image}><Link to='/indlovu/pink/'><Image filename='indlovu-pink.jpg' alt='Pink Indlovu gin' /></Link></div>
-				<div className={indlovuStyles.image}><Link to='/indlovu/citrus/'><Image filename='indlovu-citrus.jpg' alt='Citrus Indlovu gin' /></Link></div>
+				<div className={indlovuStyles.image}><Link className={indlovuStyles.link} to='/indlovu/original/'><Image filename='original-infront-of-elephant.jpg' alt='Original Indlovu gin'/><p className={`${indlovuStyles.p} ${indlovuStyles.red}`}><h2 className={indlovuStyles.allCaps}>Indlovu Original</h2></p></Link></div>
+				<div className={indlovuStyles.image}><Link className={indlovuStyles.link} to='/indlovu/pink/'><Image filename='pink-at-marina.jpg' alt='Pink Indlovu gin' /><p className={`${indlovuStyles.p} ${indlovuStyles.pink}`}><h2 className={indlovuStyles.allCaps}>Indlovu Pink</h2></p></Link></div>
+				<div className={indlovuStyles.image}><Link className={indlovuStyles.link} to='/indlovu/citrus/'><Image filename='citrus-with-barkeeper.jpg' alt='Citrus Indlovu gin' /><p className={`${indlovuStyles.p} ${indlovuStyles.orange}`}><h2 className={indlovuStyles.allCaps}>Indlovu Citrus</h2></p></Link></div>
 			</div>
 		</Layout>
 	)
