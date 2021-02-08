@@ -13,25 +13,19 @@ const Indlovu = () => {
 				<div className={indlovuStyles.image}>
 					<Link className={indlovuStyles.link} to='/indlovu/original/'>
 						<Image filename='original-infront-of-elephant.jpg' alt='Original Indlovu gin'/>
-						<p className={`${indlovuStyles.p} ${indlovuStyles.red}`}>
-							<h2 className={indlovuStyles.allCaps}>Indlovu Original</h2>
-						</p>
+						<h2 className={`${indlovuStyles.p} ${indlovuStyles.red} ${indlovuStyles.allCaps}`}>Indlovu Original</h2>
 					</Link>
 				</div>
 				<div className={indlovuStyles.image}>
 					<Link className={indlovuStyles.link} to='/indlovu/pink/'>
 						<Image filename='pink-at-marina.jpg' alt='Pink Indlovu gin' />
-						<p className={`${indlovuStyles.p} ${indlovuStyles.pink}`}>
-							<h2 className={indlovuStyles.allCaps}>Indlovu Pink</h2>
-						</p>
+						<h2 className={`${indlovuStyles.p} ${indlovuStyles.pink} ${indlovuStyles.allCaps}`}>Indlovu Pink</h2>
 					</Link>
 				</div>
 				<div className={indlovuStyles.image}>
 					<Link className={indlovuStyles.link} to='/indlovu/citrus/'>
 						<Image filename='citrus-with-barkeeper.jpg' alt='Citrus Indlovu gin' />
-						<p className={`${indlovuStyles.p} ${indlovuStyles.orange}`}>
-							<h2 className={indlovuStyles.allCaps}>Indlovu Citrus</h2>
-						</p>
+						<h2 className={`${indlovuStyles.p} ${indlovuStyles.orange} ${indlovuStyles.allCaps}`}>Indlovu Citrus</h2>
 					</Link>
 				</div>
 			</div>
