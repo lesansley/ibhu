@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: `Ibhu - Dare to be different`,
 		name: 'Ibhu',
-		description: `Gins made in Africa ... Inspired by elephants`,
+		description: `Gins made in Africa ... inspired by elephants`,
 		contact: `Les Ansley`,
 		email: `info@ibhu.co.za`,
 		tel: '+27 66 216 9667',
