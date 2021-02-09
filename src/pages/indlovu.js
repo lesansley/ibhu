@@ -1,41 +1,38 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Image from '../components/image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import indlovuStyles from './indlovu.module.scss';
+import ExpressionsImages from '../components/expressions-images';
 
 const Indlovu = () => {
+	const expressionList = [
+		{
+			page: '/indlovu/original/',
+			imageName: 'original-infront-of-elephant.jpg',
+			imageAlt: 'Original Indlovu gin',
+			htmlText: 'Indlovu Original',
+			color: 'red'
+		},
+		{
+			page: '/indlovu/pink/',
+			imageName: 'pink-at-marina.jpg',
+			imageAlt: 'Pink Indlovu gin',
+			htmlText: 'Indlovu Pink',
+			color: 'pink'
+		},
+		{
+			page: '/indlovu/citrus/',
+			imageName: 'citrus-with-barkeeper.jpg',
+			imageAlt: 'Citrus Indlovu gin',
+			htmlText: 'Indlovu Citrus',
+			color: 'orange'
+		}
+	]
 	return (
 		<Layout>
 			<SEO title='Indlovu Gin page' />
-			<div className={indlovuStyles.imageContainer}>
-				<div className={indlovuStyles.image}>
-					<Link className={indlovuStyles.link} to='/indlovu/original/'>
-						<Image filename='original-infront-of-elephant.jpg' alt='Original Indlovu gin'/>
-						<h2 className={`${indlovuStyles.p} ${indlovuStyles.red} ${indlovuStyles.allCaps}`}>Indlovu Original</h2>
-					</Link>
-				</div>
-				<div className={indlovuStyles.image}>
-					<Link className={indlovuStyles.link} to='/indlovu/pink/'>
-						<Image filename='pink-at-marina.jpg' alt='Pink Indlovu gin' />
-						<h2 className={`${indlovuStyles.p} ${indlovuStyles.pink} ${indlovuStyles.allCaps}`}>Indlovu Pink</h2>
-					</Link>
-				</div>
-				<div className={indlovuStyles.image}>
-					<Link className={indlovuStyles.link} to='/indlovu/citrus/'>
-						<Image filename='citrus-with-barkeeper.jpg' alt='Citrus Indlovu gin' />
-						<h2 className={`${indlovuStyles.p} ${indlovuStyles.orange} ${indlovuStyles.allCaps}`}>Indlovu Citrus</h2>
-					</Link>
-				</div>
-			</div>
+			<ExpressionsImages data={expressionList}/>
 		</Layout>
 	)
 }
 
-export default Indlovu
-/**
-INDLOVU GIN
-An innovative premium gin for the adventurous spirit and the discerning gin collector.
-The Ibhu brand is founded in the spirit of innovation, and Indlovu is our gin under that brand. Indlovu gin is made using multiple flavouring runs.
- */
+export default Indlovu	

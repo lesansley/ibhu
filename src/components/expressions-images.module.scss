@@ -1,0 +1,40 @@
+@import '../styles/base/variables';
+
+a:hover {
+	text-decoration: none;
+	color: $IBHU_BLACK;
+}
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.image {
+	width: 100%;
+	height: auto;
+}
+.p {
+	text-align: center;
+	font-family: $FONT_FAMILY;
+}
+.link:hover{
+	text-decoration: none;
+}
+.orange {
+	color: $INDLOVU_ORANGE
+}
+.red {
+	color:$INDLOVU_RED
+}
+.pink {
+	color: $INDLOVU_PINK;
+}
+.all-caps {
+	font-variant: small-caps;
+	letter-spacing: 0.15em;
+}
+@media (min-width: $breakpointMed) {
+	.image {
+		width: 30%;
+	}
+}
