@@ -1,46 +1,26 @@
-.container {
-	display: grid;
-	column-gap: 100px;
-	row-gap: 15px;
-	align-items: center;
+@import '../styles/base/variables';
+
+.image-container {
+	display: flex;
 	justify-content: center;
-	grid-template-areas: 
-		'af-pic bathos-pic'
-		'af-info bathos-info';
 }
-.giving-af-pic {
-	grid-area: af-pic;
-}
-.giving-af-info {
-	grid-area: af-info;
-}
-.giving-bathos-pic {
-	grid-area: bathos-pic;
-}
-.giving-bathos-info {
-	grid-area: bathos-info;
+.image-wrapper {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1.45rem;
 }
 .donate-button {
 	margin-top: 10px;
 }
-@media (max-width: 700px) {
-  .container {
-    grid-template-areas:
-      'af-pic'
-      'af-info'
-			'bathos-pic'
-			'bathos-info';
-  }
+.link {
+	color: $IBHU_BLUE;
 }
-.image {
-	max-width: 400px;
-	margin-bottom: 1.45rem;
-}
-.right {
-	float: right;
+.link:hover {
+	color: $INDLOVU_RED;
 }
 
-.image {
-	max-width: 400px;
-	margin-bottom: 1.45rem;
-}
+@media (min-width: $breakpointSmall) {
+  .image-wrapper {
+		max-width: 400px;
+	}
+} 
