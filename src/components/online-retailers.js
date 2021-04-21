@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import h from '../helpers';
 import OnlineRetailersStyles from './online-retailers.module.scss';
 
 const OnlineRetailers = ({ data }) => {
+	h.sortObjectArray(data, 'name');
 	return (
 		<div className={OnlineRetailersStyles.container}>
 			<ul className={OnlineRetailersStyles.list}>

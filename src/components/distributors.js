@@ -5,6 +5,7 @@ import h from '../helpers';
 import distributorsStyles from './distributors.module.scss';
 
 const Distributors = ({ data }) => {
+	h.sortObjectArray(data, 'name');
 	return (
 		<div className={distributorsStyles.container}>
 			<ul className={distributorsStyles.list}>
@@ -14,9 +15,9 @@ const Distributors = ({ data }) => {
 							<div className={distributorsStyles.name}>{d.name}</div>
 							{d.contact && <div>{d.contact}</div>}
 							{d.email && <div>Email: <a href={`mailto:${d.email}`}>{d.email}</a></div>}
-							{d.tel && <div>Tel: <a href={`tel:${h.removeBlanks(d.tel)}`}>{d.tel}</a></div>}
+							{d.tel && d.tel > 0 && <div>Tel: <a href={`tel:${h.removeBlanks(d.tel)}`}>{d.tel}</a></div>}
 							{d.url && <div>Website: <a href={d.url} target='_blank' rel='noopener noreferrer'>{d.url}</a></div>}
-							<div>Region: <span className={distributorsStyles.country}>{d.country.join(', ')}</span></div>
+							<div>Region: <span className={distributorsStyles.location}>{d.location.join(', ')}</span></div>
 						</li>
 					)
 				})}
@@ -32,7 +33,7 @@ Distributors.propTypes = {
 		email: PropTypes.string,
 		tel: PropTypes.string,
 		url: PropTypes.string,
-		country: PropTypes.array.isRequired
+		location: PropTypes.array.isRequired
 	})).isRequired
 }
 

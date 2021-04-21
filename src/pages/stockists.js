@@ -28,7 +28,7 @@ const Stockists = () => {
 			distributors: allContentfulDistributors {
 				nodes {
 					name
-					country
+					location
 					contact
 					email
 					tel
@@ -38,6 +38,16 @@ const Stockists = () => {
 			online: allContentfulOnline {
 				nodes {
 					name
+					url
+				}
+			}
+			onlineInt: allContentfulOnlineInt {
+				nodes {
+					name
+					location
+					contact
+					email
+					tel
 					url
 				}
 			}
@@ -53,7 +63,9 @@ const Stockists = () => {
 			</div>
 			<Divider />
 			<h2>Online retailers</h2>
-			<OnlineRetailers data={data.online.nodes}/>
+			<OnlineRetailers data={data.online.nodes} />
+			<h2>International online retailers</h2>
+			<Distributors data={data.onlineInt.nodes}/>
 			<h2>Distributors</h2>
 			<Distributors data={data.distributors.nodes} />
 		</Layout>
