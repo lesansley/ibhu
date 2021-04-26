@@ -2,7 +2,7 @@
 
 .container a {
 	text-decoration: none;
-	color: $IBHU_BLACK;
+	color: $IBHU_BLUE;
 	font-variant: small-caps;
 }
 
@@ -13,4 +13,8 @@
 .list {
 	list-style: none;
 	margin-left: 0px;
+}
+
+.item {
+	margin-bottom: 0;
 }

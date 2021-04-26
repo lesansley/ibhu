@@ -11,7 +11,7 @@ const OnlineRetailers = ({ data }) => {
 			<ul className={OnlineRetailersStyles.list}>
 				{data.map( d	 => {
 					return (
-						<li key={uuidv4()}>
+						<li key={uuidv4()} className={OnlineRetailersStyles.item}>
 							<div><a href={d.url} target='_blank' rel='noopener noreferrer'>{d.name}</a></div>
 						</li>
 					)

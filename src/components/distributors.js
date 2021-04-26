@@ -12,12 +12,16 @@ const Distributors = ({ data }) => {
 				{data.map( d	 => {
 					return (
 						<li key={uuidv4()}>
-							<div className={distributorsStyles.name}>{d.name}</div>
+							{
+								(d.url)
+									? <div className={distributorsStyles.name}>
+										<a href={d.url} target='_blank' rel='noopener noreferrer'>{d.name}</a></div>
+									: <div className={distributorsStyles.name}>{d.name}</div>
+							}
 							{d.contact && <div>{d.contact}</div>}
 							{d.email && <div>Email: <a href={`mailto:${d.email}`}>{d.email}</a></div>}
 							{d.tel && d.tel > 0 && <div>Tel: <a href={`tel:${h.removeBlanks(d.tel)}`}>{d.tel}</a></div>}
-							{d.url && <div>Website: <a href={d.url} target='_blank' rel='noopener noreferrer'>{d.url}</a></div>}
-							<div>Region: <span className={distributorsStyles.location}>{d.location.join(', ')}</span></div>
+							<div>Region: <span className={distributorsStyles.location}>{d.location.sort().join(', ')}</span></div>
 						</li>
 					)
 				})}
