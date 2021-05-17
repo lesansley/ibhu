@@ -124,9 +124,20 @@ module.exports = {
 				spaceId: process.env.CONTENTFUL_SPACE_ID,
 				accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 			}
-		}
+		},
+		{
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          `G-Y6WSDVZECB`
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+		//
+		// GA identifier: G-Y6WSDVZECB
   ],
 }
