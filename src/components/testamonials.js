@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { useStaticQuery, StaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { v4 as uuid4 } from 'uuid';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
