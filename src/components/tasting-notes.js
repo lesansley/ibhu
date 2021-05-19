@@ -15,28 +15,33 @@ const TastingNotes = ({ gin }) => {
 						idx
 						descriptor
 						description {
-							json
+							raw
 						}
 					}
 				}
 			}
 		}
 	`)
+	
 	const len = data.notes.edges.length;
+	
 	let notes = [];
 	for (let i = 0; i < len; i++) {
 		if (data.notes.edges[i].node.gin === gin) {
 			notes.push(data.notes.edges[i].node);
 		}
 	}
+	
 	notes.sort((a, b) => (a.idx > b.idx) ? 1 : -1)
-	const options = {
+	
+	const drcOptions = {
 		renderNode: {
 			[BLOCKS.PARAGRAPH]: (node, children) => (
 				<p>{children}</p>
 			)
 		}
 	};
+	
 	return (
 		<div>
 			<table>
@@ -45,7 +50,7 @@ const TastingNotes = ({ gin }) => {
 						return (
 							<tr key={uuid4()}>
 								<th>{note.descriptor}</th>
-								<td>{documentToReactComponents(note.description.json, options)}</td>
+								<td>{documentToReactComponents(JSON.parse(note.description.raw), drcOptions)}</td>
 							</tr>
 						)
 					})}

@@ -15,7 +15,7 @@ const FAQ = () => {
 				edges {
 					node {
 						answer {
-							json
+							raw
 						}
 						question
 					}
@@ -24,7 +24,7 @@ const FAQ = () => {
 	}
 	`)
 
-	const options = {
+	const drcOptions = {
 		renderNode: {
 			[BLOCKS.UL_LIST]: (node) => {
 				return (<List data={node} />);
@@ -33,7 +33,7 @@ const FAQ = () => {
 	}
 
 	var edges = data.faq.edges.map(edge => {
-		return ({ uid: uuidv4(), question: edge.node.question, answer: edge.node.answer.json })
+		return ({ uid: uuidv4(), question: edge.node.question, answer: JSON.parse(edge.node.answer.raw) })
 	});
 
 	return (
@@ -50,7 +50,7 @@ const FAQ = () => {
 						contentOuterClassName={faqStyles.outer}
 						contentInnerClassName={faqStyles.inner}
 					>
-						{documentToReactComponents(edge.answer, options)}
+						{documentToReactComponents(edge.answer, drcOptions)}
 					</Collapsible>
 				)
 			})}
