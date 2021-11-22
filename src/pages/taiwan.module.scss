@@ -1,0 +1,259 @@
+@import '../styles/libraries/bootstrap.scss';
+@import '../styles/libraries/fontawesome.scss';
+
+.body{
+	--pink:#eca8b1;
+	--lightyellow:#f0d09d;
+	margin:0px;
+	font-family: sans-serif;
+	padding:0px;
+	box-sizing: border-box;
+}
+.fa{
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	display:inline-block;
+	font-style:normal;
+	font-variant:normal;
+	text-rendering:auto;
+	line-height:1;
+	font-family:"Font Awesome 5 Free";
+	font-weight:900
+}
+.fa-envelope:before{
+	content:"\f0e0"
+}
+.main_hero_section{
+	min-height:62.5rem;
+	background:#f6c0c0;
+	background-size:cover;
+}
+
+.container-fluid{
+	margin:0px;padding:0px;
+	box-sizing: border-box;
+	overflow:hidden;
+}
+.main_heading{
+	font-size:1.875rem;
+	color:white;
+
+	margin-left:0rem;
+	margin-top:2.5rem;
+	background: white;
+	display: inline-block;
+	padding:10px 30px 10px 20px;
+	font-weight: bold;
+	color:var(--pink);
+}
+.hero_heading{
+	font-size:3.4375rem;
+	margin-top:4.375rem;
+	color:white;
+	letter-spacing:0.0625rem;
+	display: inline-block;
+	border-bottom:2px solid white;
+	font-weight: bold;
+	text-shadow:0px 0px 5px gray;
+}
+.herop{
+	font-size:1.875rem;
+	color:white;
+	text-shadow:0px 0px 3px gray;
+	font-weight: bold;
+}
+.top-right a{
+	color:white;
+}
+.second_section{
+	width:100%;
+	height: auto;
+	//background: url(../images/second_section.png);
+	background-size: cover;
+	margin-top:-6.25rem;
+	padding:8.125rem 0rem;
+}
+.first_sub_heading{
+	font-size:2.625rem;
+	color:white;
+}
+.elephant-logo{
+	position: absolute;
+	top:0.625rem;
+	max-width: 80px;
+	float: left;
+}
+.gen_p{
+	font-size:1.6875rem;
+	color:white;
+	font-weight: bold;
+}
+.third_section{
+	padding:5rem 0rem;
+	background: var(--lightyellow);
+}
+.redcolor{
+	color:#ca5357;
+	font-weight: bold;
+}
+.ibhulogo{
+	float:left;
+	max-width:11.25rem;
+	margin:0.625rem;
+}
+.mtt5{
+	margin-top:4.375rem;
+}
+.steptext{
+	font-size:1.25rem;
+	text-align: center;
+	color:#ca5357;
+	font-weight: bold;
+	margin-bottom:0.625rem;
+}
+.circle{
+	width:6.25rem;
+	height:6.25rem;
+	background:white;
+	border-radius:100%;
+	display: block;
+	margin:0 auto;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size:1.25rem;
+	text-align: center;
+	color:#ca5357;
+	font-weight: bold;
+}
+.differentbg{
+	display: inline-block;
+	padding-right:1.25rem;
+	background: #ca5357;
+	line-height:2.5rem;
+	color:var(--lightyellow);
+}
+
+.fifth_section{
+	width:100%;
+	height:62.5rem;
+	//background: url(../images/fifth_section.png);
+	background-size: cover;
+}
+.forbg{
+	background: rgba(0,0,0,.3);
+	padding:1.25rem;
+	box-sizing: border-box;
+}
+.forheading{
+	color:white;
+	font-size:1.875rem;
+	font-weight:bold;
+}
+.gen_pp{
+	font-size:1.1875rem;
+	color:white;
+}
+.formargintop{
+	margin-top:11.25rem;
+}
+.sixth_section{
+	width:100%;
+height:62.5rem;
+	//background: url(../images/sixth_section.png);
+	background-size: cover;
+}
+.seventh_section{
+	width:100%;
+height:62.5rem;
+	//background: url(../images/seventh_section.png);
+	background-size: cover;
+}
+.eight_section{
+	background:var(--lightyellow);
+	padding:0rem 0rem;
+}
+.pattern{
+	width:100%;
+	/*height:1.875rem;*/
+	display: block;
+	width:cover;
+	margin-top:-0.625rem;
+}
+.litlesmall{
+	font-size:2rem;
+}
+.ninth_section{
+	padding:4rem 0rem;
+	background:#e38674;
+}
+.forrating{
+	padding:1.5625rem;
+	box-sizing: border-box;
+	background: var(--lightyellow);
+	margin:2rem 0rem;
+	border-radius:1.5625rem;
+	padding-bottom:0.625rem;
+}
+.reviewer{
+	color:#ca5357;;
+	display: block;
+	font-size:1.25rem;
+	font-style: italic;
+}
+.fotlink{
+	font-size:1.25rem;
+	color:white;
+}
+.footerheading{
+	font-size:1.5625rem;
+	line-height:2.5rem;
+	font-style: underline;
+	font-weight: bold;
+	display: inline-block;
+	border-bottom:2px solid white;
+}
+.footerheadingthree{
+	color:white;
+	font-weight: bold;
+	line-height:2.5rem;
+	font-size:1.5rem;
+}
+.email-icon {
+	max-width: 30px;
+}
+
+@media only screen and (max-width: 992px){
+	html{
+	font-size:55.5%;
+	}
+	.mb3{
+	margin-bottom:1.11rem;
+}
+}
+@media only screen and (max-width: 768px){
+	html{
+	font-size:45.5%;
+	}
+	.elephantpic{
+	position: relative;
+	top:0.455rem;
+}
+.second_section{
+	margin-top:-5.46rem;
+}
+.mb3{
+	margin-bottom:1.365rem;
+}
+.fifth_section, .sixth_section, .seventh_section{
+	height:auto!important;
+	padding:4.55rem 0rem;
+}
+.formargintop{
+	margin-top:0rem;
+}
+}
+@media only screen and (max-width: 576px){
+
+}
