@@ -93,7 +93,7 @@ const Taiwan = () => {
 								</h2>
 								<div className='mt-4'>
 									<div className={`img-fluid ${taiwanStyles.ibhulogo}`}>
-										<Image filename='ibhu_-icon_512x512.png' alt='Ibhu Logo' />
+										<Image filename='ibhu-icon-512x512.png' alt='Ibhu Logo' />
 									</div>
 									<p className={`${taiwanStyles.gen_p} ${taiwanStyles.notbold} ${taiwanStyles.redcolor}`}>
 										IBHU品牌以創新精神創立。Indlovu是品牌旗下琴酒名稱，取自南非祖魯語Indlovu「大象」一詞，Indlovu琴酒的基本成份來自經過清洗和乾燥的大象糞便，將提取的植物成分注入琴酒以提供獨一無二的非洲風味。
@@ -103,7 +103,7 @@ const Taiwan = () => {
 							</div>
 							<div className={`col-12 col-md-6 ${taiwanStyles.rightside}`}>
 								<div className='img-fluid'>
-									<Image filename='pink-and-original.jpg' alt='Indlovu Pink and Indlocu Original gin bottles' />
+									<Image filename='pink-and-original.jpg' alt='Indlovu Pink and Indlovu Original gin bottles' />
 								</div>
 							</div>
 						</div>
