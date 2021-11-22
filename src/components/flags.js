@@ -25,6 +25,14 @@ const Flags = () => {
 							/>	
 						</Link>
 					</li>
+					<li className={flagsStyles.listItem}>
+						<Link to='/taiwan'>
+							<Image
+								filename='TW.png'
+								alt='Taiwan'
+							/>	
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>

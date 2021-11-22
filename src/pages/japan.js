@@ -13,13 +13,13 @@ const Japan = () => {
 	return (
 	<div className={`body ${japanStyles.body}`}>
 		<div className={`container-fluid ${japanStyles.row}`}>
-						<div className={`container-fluid ${japanStyles.contaimerFluid} ${japanStyles.row}`}>
+				<div className={`container-fluid ${japanStyles.containerFluid} ${japanStyles.row}`}>
 					<div className={`${japanStyles.heroSection} col-12 col-md-12`} style={{ backgroundImage: `url(${data.file.publicURL})` }}>
 					<div className='container'>
-									<div className={`top-right ${japanStyles.topRight} text-center text-md-right pt-3`}>
+						<div className={`top-right ${japanStyles.topRight} text-center text-md-right pt-3`}>
 							<a href="/japan">インドラブジン　日本語ページ</a>
-										<span className='px-2 text-white'><i className={`fa ${japanStyles.fa} fa-angle-right ${japanStyles.faAngleRight}`}></i></span>
-									<a href="/">go to English page</a>
+								<span className='px-2 text-white'><i className={`fa ${japanStyles.fa} fa-angle-right ${japanStyles.faAngleRight}`}></i></span>
+							<a href="/">go to English page</a>
 						</div>
 							<div className={`container-fluid ${japanStyles.containerFluid} ${japanStyles.row}`}>
 								<div className={`menu ${japanStyles.menu} col-12 p-0`}>
@@ -127,8 +127,8 @@ const Japan = () => {
 									<p className={`normal-p ${japanStyles.normalP} pt-3`}>
 								ボタニカルを抽出する工程で洗浄作業を入念におこなっています。 もともと象は食した 30％しか消化しません。体内を通るスピードが速 く、70％は植物性物質を含みバクテリアの値がとても低いですが、象 の糞ということから抵抗を感じる方のために、衛生機関に検査を依頼 し（VinLab 社）、バクテリア、ウィルスなど有害細菌数が０であるこ とが証明されています。
 							</p>
-											<div className='text-center'>
-												<Image filename='test-report.JPG' className='img-fluid' alt='Analysis report from Vinlabs'/>
+							<div className='text-center'>
+								<Image filename='test-report.jpg' className='img-fluid' alt='Analysis report from Vinlabs'/>
 							</div>
 						</div>
 						<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
@@ -148,7 +148,7 @@ const Japan = () => {
 							</div>
 							<div className='row mt-4'>
 												<div className={`col-12 col-md-4 text-center smlogo ${japanStyles.smlogo}`}>
-												<Image filename='sa-craft-award.png' className='img-fluid' alt='South African Craft Gin Award DOuble Gold'/>
+												<Image filename='sacraft-2019.png' className='img-fluid' alt='South African Craft Gin Award DOuble Gold'/>
 								</div>
 								<div className='col-12 col-md-8'>
 											<h5 className={`sub-sub-heading ${japanStyles.subSubHeading} mt-0 text-center text-md-left py-2`}>SA CRAFT GIN AWARDS 2019 <br /> ダブルゴールドメダル受賞</h5>
