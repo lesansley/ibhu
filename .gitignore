@@ -1,4 +1,5 @@
 .env.development
+package-lock.json
 public
 
 # Logs
