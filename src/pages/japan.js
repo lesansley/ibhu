@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import Flags from '../components/flags';
 import Image from '../components/image'
 import japanStyles from './japan.module.scss';
 
@@ -11,16 +12,14 @@ const Japan = () => {
 		}}`)
 	
 	return (
-	<div className={`body ${japanStyles.body}`}>
-		<div className={`container-fluid ${japanStyles.row}`}>
+		<div className={`body ${japanStyles.body}`}>
+			<div className={`container-fluid ${japanStyles.row}`}>
 				<div className={`container-fluid ${japanStyles.containerFluid} ${japanStyles.row}`}>
+					<div className={`${japanStyles.flags}`}>
+						<Flags />
+					</div>
 					<div className={`${japanStyles.heroSection} col-12 col-md-12`} style={{ backgroundImage: `url(${data.file.publicURL})` }}>
 					<div className='container'>
-						<div className={`top-right ${japanStyles.topRight} text-center text-md-right pt-3`}>
-							<a href="/japan">インドラブジン　日本語ページ</a>
-								<span className='px-2 text-white'><i className={`fa ${japanStyles.fa} fa-angle-right ${japanStyles.faAngleRight}`}></i></span>
-							<a href="/">go to English page</a>
-						</div>
 							<div className={`container-fluid ${japanStyles.containerFluid} ${japanStyles.row}`}>
 								<div className={`menu ${japanStyles.menu} col-12 p-0`}>
 									<nav className={`navbar ${japanStyles.navbar} navbar-expand-lg p-0`}>
@@ -296,8 +295,6 @@ const Japan = () => {
 	</div>
 	<script type="text/javascript"></script>
 	</div>
-
-
 	)
 }
 

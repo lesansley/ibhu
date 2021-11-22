@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from '../components/image'
+import Flags from '../components/flags';
 import taiwanStyles from './taiwan.module.scss';
 
 const Taiwan = () => {
@@ -11,7 +12,6 @@ const Taiwan = () => {
 				name
 			}
 	}}`)
-	console.log(data);
 	data = data.allFile.nodes
 	let section1url;
 	let section2url;
@@ -44,10 +44,8 @@ const Taiwan = () => {
 		<div className={`container-fluid ${taiwanStyles.containerFluid} ${taiwanStyles.body}`}>
 			<div className='row'>
 				<div className={`col-12 col-md-12 ${taiwanStyles.main_hero_section}`} style={{ backgroundImage: `url(${section1url})` }}>
-					<div className={`top-right ${taiwanStyles.topRight} text-center text-md-right pt-3`}>
-						<a href="/taiwan">台湾页面</a>
-							<span className='px-2 text-white'><i className={`fa ${taiwanStyles.fa} fa-angle-right ${taiwanStyles.faAngleRight}`}></i></span>
-						<a href="/">go to English page</a>
+				<div className={`${taiwanStyles.flags}`}>
+						<Flags />
 					</div>
 					<h2 className={`${taiwanStyles.main_heading}`}>RÒU BY T-HAM 獨家代理 </h2>
 					<div className='container'>
