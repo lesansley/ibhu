@@ -74,18 +74,14 @@ class ContactForm extends Component {
 	submitForm(ev) {
     ev.preventDefault();
 		const form = ev.target;
-		console.log(form);
 		let data = new FormData(form);
-		console.log('data', data)
-    const xhr = new XMLHttpRequest();
+		const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
-				//form.reset();
-				console.log('email after reset', this.state.email);
-        this.setState({ status: 'SUCCESS' });
+				this.setState({ status: 'SUCCESS' });
       } else {
         this.setState({ status: 'ERROR' });
       }
