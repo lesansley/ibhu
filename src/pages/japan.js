@@ -87,9 +87,9 @@ const Japan = () => {
 						</h2>
 					</div>
 					<div className='row mt-5'>
-										<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
-										<Image filename='indlovu-original-with-box.jpg' alt='Indlovu Original gin with presentation box'/>
-							<h3 className={`p-Title ${japanStyles.pTitle}`}>インドラブ・ジン オリジナル</h3> 
+						<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
+							<Image filename='indlovu-original-with-box.jpg' alt='Indlovu Original gin with presentation box'/>
+							<h3 className={`p-Title ${japanStyles.pTitle}`}>インドラブジン・オリジナル</h3> 
 							<p className={`normal-p ${japanStyles.normalP}`}>
 								アフリカ・サバンナに生息する、象の糞を洗浄・抽出して作られた最 高峰のクラフトジン。 <br />
 								象たちによって良質で新鮮な植物が厳選され、香り高いだけでなく、
@@ -98,9 +98,9 @@ const Japan = () => {
 								豊富で良質な食物繊維が厳選された証は、この美しく透き通る “ボタ ニカルイエロー” に現れています。
 							</p>
 						</div>
-										<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
-										<Image filename='indlovu-pink-with-box.jpg' alt='Indlovu pink gin bottle with presentation box'/>
-							<h3 className={`p-Title ${japanStyles.pTitle}`}>インドラブ・ピンクジン</h3> 
+						<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
+							<Image filename='indlovu-pink-with-box.jpg' alt='Indlovu pink gin bottle with presentation box'/>
+							<h3 className={`p-Title ${japanStyles.pTitle}`}>インドラブジン・ロゼ (ピンク)</h3> 
 							<p className={`normal-p ${japanStyles.normalP}`}>
 								サバンナの象が好んで食す果物「ウチワサボテン」の実。この果物に <br />
 								はポリフェノール、ミネラル、ビタミンを多く含みます。 <br />
@@ -109,6 +109,17 @@ const Japan = () => {
 								たのがインドラブ・ピンクジンです。 <br />
 								目を閉じて、この一滴を味わって下さい。アフリカ象のもたらすサバ <br />
 								ンナの優美な味わいと、アフリカの香りに身を委ねて下さい。 <br />
+							</p>
+						</div>
+						<div className={`col-12 col-md-6 mb3 ${japanStyles.mb3}`}>
+							<Image filename='citrus-bottle-and-box.jpg' alt='Indlovu citrus gin bottle with presentation box'/>
+							<h3 className={`p-Title ${japanStyles.pTitle}`}>インドラブジン・シトラス</h3> 
+							<p className={`normal-p ${japanStyles.normalP}`}>
+								サバンナの大自然で育つマルーラとオレンジで香り付けしました。<br />
+								マルーラとは象の大好物で甘味と酸味のバランスがよく、ビタミン C<br />
+								が豊富な果物です。動物たちの大好物で人間の手にまで回りづらい貴<br />
+								重な果物なのと、収穫できる期間がわずかなため、限定商品となって<br />
+								います。爽やかな柑橘系の香りをお楽しみください。<br />
 							</p>
 						</div>
 					</div>
@@ -278,7 +289,7 @@ const Japan = () => {
 						<div className={`col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center grayshade ${japanStyles.grayshade}`}>
 							<h2 className={`aheria-heading ${japanStyles.aheriaHeading}`}>総代理店 アセントジャパン合同会社</h2>
 							<h4>Ascent Japan LLC</h4>
-							<h3 className={`emailink ${japanStyles.emailink}`}>Email:<a href="mailto:info@ascentjapan.co.jp">info@ascentjapan.co.jp</a></h3>
+							<h3 className={`emailink ${japanStyles.emailink}`}>Email : <a href="mailto:ascent.japan616@gmail.com">ascent.japan616@gmail.com</a></h3>
 						</div>
 					</div>
 				</div>
