@@ -289,7 +289,7 @@ const Japan = () => {
 						<div className={`col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center grayshade ${japanStyles.grayshade}`}>
 							<h2 className={`aheria-heading ${japanStyles.aheriaHeading}`}>総代理店 アセントジャパン合同会社</h2>
 							<h4>Ascent Japan LLC</h4>
-							<h3 className={`emailink ${japanStyles.emailink}`}>Email : <a href="mailto:ascent.japan616@gmail.com">ascent.japan616@gmail.com</a></h3>
+							<h3 className={`emailink ${japanStyles.emailink}`}>Email : <a href="mailto:info@ascentjp.com">info@ascentjp.com</a></h3>
 						</div>
 					</div>
 				</div>
